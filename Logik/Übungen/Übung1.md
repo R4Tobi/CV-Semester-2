@@ -108,9 +108,11 @@ c)
 d)
 
 - Prämissen:
-  - 
+  - Sarah hast nach dem impfen eine starke Migräne bekommen
+  - Sie leidet seit der Impfung regelmäßig an Migräne
 - Konklusion:
   - Impfen macht krank
 - Gültigkeit:
+  - gültig
 
 ## 1.7 (in der Übung)
