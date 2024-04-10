@@ -29,7 +29,7 @@ b)
 - Konklusion:
   - Es gibt wissberige Mensabesucher
 - Gültigkeit:
-  - logisch gültig
+  - logisch gültig, aber nicht korrekt
 
 c)
 
@@ -47,15 +47,70 @@ d)
 - Prämissen:
   - Wenn mein Chef mit mir zufrieden ist, dann bekomme ich nächstes Jahr eine Gehaltserhöhung.
   - Wenn ich eine Gehaltserhöhung bekomme, dann kaufe ich mir ein Haus.
-  - Wenn ich nächstes Jahr kein Haus kaufe, dann ist mein Chef nicht mit mir zufrieden.
+  - Wenn ich nächstes Jahr kein Haus kaufe
 - Konklusion:
-  - ...
+  - Mein Chef ist nicht zufrieden
 - Gültigkeit:
+  -nicht gültig
 
 ## 1.3
 
 a) ja "Kein Student lernt. Jeder Student schafft jede Klausur beim ersten Versuch. Also muss jede Klausur nur einmal geschrieben werden."
+b) ja, "Die Straße ist glatt"
+c) nein,
+d) ja,
 
-b) nein, weil flasche Prämissn nur falsche Konklusionen zulassen.
+## 1.4 (in der Übung)
+
+a) logisch nicht gültig -> Konklusion kann nur aus Tiger erfolgen, nicht auf die Tere
+
+b) logisch ungültig und nicht korrekt -> "Kometen sind keine astronomischen Objekte. Einige Planteten sind keine astronomischen Objekte. Daher sind alle Planeten Kometen."
+
+c) logisch ungültig und nicht korrekt
+
+## 1.5 (in der Übung)
+
+- (3) folgt aus (1) und (2)
+- (2) folgt nicht aus (1) und (3)
+- (1) folgt nicht aus (1) und (3), folgt nur wenn sie nicht väterlicherseits miteinander verwandt sind
+
+## 1.6 (in der Übung)
+
+a)
+
+- Prämissen:
+  - freundlich sei ist der einfachste weg freunde zu finden
+  - anna hat viele freunde
+- Konklusion:
+  - Anna ist freundlich
+- Gültigkeit:
+  - nicht gültig
+b)
+
+- Prämissen:
+  - Fische sind wechselwarm
+  - Delphine sind Fische
+- Konklusion:
+  - Delphine sind wechselwarm
+- Gültigkeit:
+  - nicht gültig
+
 c)
+
+- Prämissen:
+  - vorfahren eines kindes sind die Eltern
+  - Jeder Mensch hat 2 menschliche Eltern
+- Konklusion:
+  - Jeder Mensch hat unendlich viele vorfahren
+- Gültigkeit:
+  - gültig, inkorrekt
+
 d)
+
+- Prämissen:
+  - 
+- Konklusion:
+  - Impfen macht krank
+- Gültigkeit:
+
+## 1.7 (in der Übung)
