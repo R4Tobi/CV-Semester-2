@@ -1,0 +1,8 @@
+set( COLOR_SOURCES
+    ${CMAKE_CURRENT_LIST_DIR}/checkerboard.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/texture.cpp
+)
+
+set( COLOR_INCLUDE_DIR
+    ${CMAKE_CURRENT_LIST_DIR}
+)

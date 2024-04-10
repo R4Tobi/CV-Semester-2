@@ -1,0 +1,13 @@
+include(${CMAKE_CURRENT_LIST_DIR}/primitives/CMakeLists.txt)
+include(${CMAKE_CURRENT_LIST_DIR}/mesh/CMakeLists.txt)
+
+set( GEOMETRY_SOURCES
+    ${MESH_SOURCES}
+    ${PRIMITIVES_SOURCES}
+)
+
+set( GEOMETRY_INCLUDE_DIR
+    ${MESH_INCLUDE_DIR}
+    ${PRIMITIVES_INCLUDE_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}
+)

@@ -1,0 +1,11 @@
+set( PRIMITIVES_SOURCES
+    ${CMAKE_CURRENT_LIST_DIR}/box.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/plane.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/quadric.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/sphere.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/triangle.cpp
+)
+
+set( PRIMITIVES_INCLUDE_DIR
+    ${CMAKE_CURRENT_LIST_DIR}
+)
