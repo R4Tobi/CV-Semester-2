@@ -32,3 +32,16 @@ head       tail
   - attribute data und größe sind privat => nicht manipulierbar
 - O(n) für jedes pushback, wo die größe verändert wird => es werden 3 Einträge statt einem hinzugefügt
 - Kosten: cost(n) = n + Σ<sup>[n/k]</sup> <sub>[l+1]</sub> (k*i)
+
+### Einfach verkettete Listen
+
+- statt explziter nachbarschft: Referenz auf nachfolgenden Eintrag
+- Eintrag wird als Knoten repräsentiert
+  - `[node] -> [node] -> [node]`
+- jeder Knoten (node) hat das Attribut "data" und "next"
+- SList: hat als Attribut "head" als Verweis auf den ersten Knoten
+- Bei leerer Liste head = null-Referenz
+- Veränderungsoperationen sind an sich Einfach, es muss aber die gesamte Liste durchlaufen werden
+  - einfache aber zeitaufwendige Operation
+
+### Doppelt verkettete Listen
