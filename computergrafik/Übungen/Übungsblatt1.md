@@ -44,4 +44,57 @@ c) 1/6 ∙ [4,2,4] ∘ [-2,-1,-2]
 
 a)
 
+[1,-3,2] x [3,7,4] = [-26,2,16]
+
 b)
+
+[0,0,1] x [1,1,0] = [-1,1,0]
+
+- Der Ergebnisvektor ist senkrecht zu beiden anderen vektoren. Der Betrag der Länge des Ergebnisvektors ist gleich der Fäche des Parraleleogramms, das von Vektor a und b aufgespannt werden.
+
+## Aufgabe 1.4: Eigenschaften des Kreuzprodukts
+
+1. Zeigen, dass a ∘ c = 0:
+
+   a ∘ c = a ∘ (a × b)
+
+   Verwenden wir die Eigenschaft des Skalarprodukts, dass a ∘ (b × c) = (a × b) ∘ c, dann haben wir:
+
+   a ∘ (a × b) = (a × a) ∘ b
+
+   Da das Kreuzprodukt zweier gleicher Vektoren null ist, wird a × a = 0:
+
+   a ∘ c = 0
+
+2. Zeigen, dass b · c = 0:
+
+   b ∘ c = b ∘ (a × b)
+
+   Verwenden wir wieder die Eigenschaft des Skalarprodukts, dass a ∘ (b × c) = (a × b) ∘ c, dann haben wir:
+
+   b ∘ (a × b) = (b × b) ∘ a
+
+   Da das Kreuzprodukt zweier gleicher Vektoren null ist und das Skalarprodukt kommutativ ist, wird b × b = 0:
+
+   b ∘ c = 0
+
+Da a ∘ c = 0 und b ∘ c = 0, ist der Vektor c orthogonal zu sowohl a als auch b.
+
+## Aufgabe 1.5: Fehlersuche
+
+a) sin^-1: -0,929611
+
+b) cos^-1: 2,500407
+
+- Beide Vektoren spannen ein Dreieck auf
+- der cosinus-Wert ist der Richige, weil wir eine Ankathete und die Hypotenuse mit den Vektoren gegeben haben
+- Beim Sinus würde die Gegenkathete verwendet werden, die haben wir in unseren Vektoren aber nicht
+
+## Aufgabe 1.6: Vektorzerlegung
+
+1. zu b parralel:
+
+a<sub>||</sub> = (a ∙ b)/(|b|<sup>2</sup>) ∙ b = (7)/(5) ∙ b = [-(28)/(5),(21)/(25)]
+
+2. zu b orthogonal:
+a<sub>T</sub> = a - a<sub>||</sub> = [-(28)/(5),(21)/(25)] - [2,5] = [-(38)/(5),-(104)/(25)]
