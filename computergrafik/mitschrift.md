@@ -1,4 +1,6 @@
-# Vorlesung 1
+# Computergrafik
+
+## Vorlesung 1
 
 - [E-Learning](https://elearning.ovgu.de/enrol/index.php?id=16588)
 - Einschreibeschlüssel: **raytracer**
@@ -6,13 +8,13 @@
 - 2/3 aller Aufgaben (2/3 der Übungen, 2/3 der Programmieraufgaben) => Ziel eigener Raytracer
 - Programmiersprache C++
 
-## Übungen
+### Übungen
 
 - Programmieraufgaben alle 2-3 Wochen
 - Übung jede Woche
 - **Übung 1 für Grundlagen sehr wichtig!!!**
 
-## Einführung
+### Einführung
 
 ### was ist computergrafik
 
@@ -27,7 +29,7 @@
 - Rendering (Darstellung) - Erzeugung des Bildes aus der Bildbeschreibung
 - Interaktion - Manipulation des Bildes
 
-### Geschichte
+#### Geschichte
 
 - 1950er: vor allem Radare
 - 1960er: erste 3D Modelle, Interaktion und erstes Display (IBM), erstes Bildspeicher Display
@@ -37,7 +39,7 @@
 - 1990er: Kommunikationstechniken, Daten und Informations-Visualisierung, Graphik im Internet, Multimedia, Non-Photorealistic Rendering
 - Ende 1990er: HDR, Entstehung von GPUs => Co-Prozessor für Grafikanwendungen
 
-### Anwendung
+#### Anwendung
 
 - Eigentlich Überall => Animationen, CAD, Simulation, Militärische Anwendugen, Computerspiele
 
@@ -68,8 +70,64 @@
 - Objekte sehr oft Dreiecksnetze
 - Strahl: *r*(t) = *o* + t**d*  //Skalare Gleichung
 - Dreieck: 3 Punkte *a*,*b*,*c*
-  - baryzentrische Koordinaten => baryzentrische Linearkombination: p = u * *a* + v * *b* + w * *c*, mit u + v + w = 1
+  - baryzentrische Koordinaten => baryzentrische Linearkombination: p = u ∙ *a* + v ∙ *b* + w ∙ *c*, mit u + v + w = 1
   - man ist innerhalb des dreiecks, wenn für u,v,w gilt: 0 <= u,v,w <= 1
-- zu lösen: [*o* + t *d* = u* *a* + v * *b* + w * *c*, u + v + w = 1]
+- zu lösen: [*o* + t *d* = u ∙ *a* + v ∙ *b* + w ∙ *c*, u + v + w = 1]
   - lineares Gleichunggsystem mit 4 unbekannten
   - i.a. eindeutige Lösung
+
+## Vorlesung 2
+
+### Raytracing
+
+- Schatten: heller/Dunkler des strahls
+- Reflexionen: "Strahlverfolgung" mit sekundärem Strahl (einfallswinkel = ausfallswinkel)
+- Beugung/Brechung: "Strahlverfolgung" mit sekundärem Strahl. nach brechungsgesetzen
+- Sichtbarkeit: Vergleichen von Beträgen der "Strahlen" erstes objekt ist sichtbar
+- Schattierung: Kugel, die beleuchtet wird, ist nicht überall gleich hell -> Beleuchtungsberechnung
+
+### Geometrische Modellerung
+
+#### Modelle
+
+##### Drahtmodell
+
+- beschreiben von Objekten durch ihre Konturen
+- zwischen den Elementen der Beschreibung einer Konturen bestehen keine Beziehungen + Mehrdeutigkeit
+
+=> Flächenmoddell
+
+##### Flächenmodell
+
+- polygonale Flächenrepräsentation
+- parametrische Flächenrepräsentation
+
+##### Körpermodelle
+
+- beschreiben die Objekte als komplette, körperhafte struktur
+- für jeden punkt kann entschieden werden, ob er sich innerhalb oder außerhalb des Körpers befindet
+- Für Körpermodelle lassen sich Verdeckungs- und Schnittberechnng durchführen
+
+#### Körpermodellierung
+
+##### Boundary Repräsentation (B-Rep)
+
+- Graphenstruktur, die begrenzte Oberflächenteile eines Körpers und ihre Lage zueinander topologisch Beschreibt
+- Beseteht aus mehreren Objekte:
+  - Schale (aus Facetten zusammengesetzte, zusammenhängende geschlossene Oberfläche)
+  - Fläche (von einer oder mehr Konturen begrenzt)
+  - Kontur (abgeschlossene, orientierte Folge vo Kanten)
+  - Kante (Geraden oder Kurzven, durch 2 Punkte begrenze)
+  - Knoten (Punkte)
+
+##### CSG
+
+- Graph in Baumstruktur
+- nicht eindeutig
+
+##### Octrees
+
+- das gesamte gebiet ist schwarz/weiß => Bild ferig
+- Fall 3: Teile sind schwarz, andere sind weiß
+- "Wurzel" -> rekursive Unterteilung -> "weiß, schwarz, oder grau" -> rekursive Unterteilung
+- Teile und herrsche prinzip
