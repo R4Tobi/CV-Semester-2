@@ -44,3 +44,14 @@ explizite Prämissen stehen eindeutig im Text, alös Aussage. implizite Prämiss
 - **symbolisiert durch:** kleinbuchstaben: (f,g,h)
 
 #### variablenfreier Term
+
+- Mathematischer Term ohne Variablen
+
+#### atomarer Satz
+
+- Aussage ohne aussagenverknüpfende logische Operatoren
+- "Der Ball ist rund"
+
+#### aussagenlogischer Satz
+
+- Satz, dem ein eindeutioger Wahrheitswert zugeordnet werden kann
