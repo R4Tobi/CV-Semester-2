@@ -1,4 +1,4 @@
-package Übung1.Palindrom;
+package Übung1;
 
 public class Palindrome {
     

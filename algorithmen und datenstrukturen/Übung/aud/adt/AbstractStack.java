@@ -1,4 +1,4 @@
-package Übung1.Palindrom;
+package aud.adt;
 
 import java.util.NoSuchElementException;
 

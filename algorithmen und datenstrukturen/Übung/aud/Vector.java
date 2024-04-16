@@ -1,4 +1,4 @@
-package Übung1.Palindrom;
+package aud;
 
 /**
  * Implementation of an array-based vector.
