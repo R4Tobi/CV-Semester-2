@@ -63,6 +63,6 @@ public class TPalindrome {
     // Testmethode zum Ausführen der Prüfung
     public static void main(String[] args) {
         String text = "abc(ah*v*ha)cba"; // Beispieltext für einen T-Palindrom
-        System.out.println(text + " :" + isTPalindrome(text));
+        System.out.println(text + " : " + isTPalindrome(text));
     }
 }
