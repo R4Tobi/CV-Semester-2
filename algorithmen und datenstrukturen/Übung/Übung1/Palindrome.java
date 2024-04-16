@@ -1,5 +1,7 @@
 package Übung1;
 
+import aud.Stack;
+
 public class Palindrome {
     // Test if text is a palindrome.
     // Ignore upper/lower case, white space, and punctuation.
