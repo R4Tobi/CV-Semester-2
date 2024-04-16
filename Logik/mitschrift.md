@@ -22,3 +22,25 @@ Das Argument behauptet, dass die Konklusion aus den Prämissen logisch folgt.
 ### implizite und explizite Prämissen
 
 explizite Prämissen stehen eindeutig im Text, alös Aussage. implizite Prämissen sind Aussagen, die wir selber hinzufügen, die aber nicht mit dem logischen Argument genannt werden.
+
+## Ausdrücke (Individuen und Prädikate)
+
+### Begriffe
+
+#### Individuenkonstante
+
+- bezeichnet in der Alltagssprache einen Individualberiff: z.B. Mond
+- repräsentiert ein einziges Individuum
+- **symbolisiert durch:** kleinbuchstaben (a,b,c,...)
+
+#### Prädikatssymbol
+
+- repräsenteren eine Aussage, die an eine Bedingung geknüpft ist
+- **symbolisiert durch:** Großbuchstaben (P,Q,R)
+
+#### Funktionssymbol
+
+- repräsentieren Funktionen, die sich auf den Wahrheitswert einer Aussage auswirken können
+- **symbolisiert durch:** kleinbuchstaben: (f,g,h)
+
+#### variablenfreier Term
