@@ -2,16 +2,45 @@
 
 ## 2.1
 
-<table>
-    <tr><th>.</th><th>V (Verticles)</th><th>E (Edges)</th><th>F ()</th><th>L ()</th><th>S ()</th><th>Genus G = V - E + F - (L - F) - 2 ∙ (S - 0)</th></tr>
-    <tr><td>a)</td><td>16</td><td>24</td><td>10</td><td>8</td><td>1</td><td>2</td></tr>
-    <tr><td>b)</td><td>24</td><td>36</td><td>13</td><td>12</td><td>1</td><td>0</td></tr>
-    <tr><td>c)</td><td>24</td><td>34</td><td>14</td><td>12</td><td>1</td><td>4</td></tr>
-    <tr><td>d)</td><td>32</td><td>46</td><td>16</td><td>16</td><td>1</td><td>4</td></tr>
-    <tr><td>e)</td><td>24</td><td>36</td><td>14</td><td>12</td><td>1</td><td>2</td></tr>
-    <tr><td>f)</td><td>32</td><td>48</td><td>16</td><td>16</td><td>1</td><td>2</td></tr>
-</table>
+| .  | V (Vertices) | E (Edges) | F (Facette) | L (Loop) | S (Shell) | Genus G = V - E + F - (L - F) - 2 ∙ (S - 0) |
+|----|--------------|-----------|-------------|----------|-----------|---------------------------------------------|
+| a) | 16           | 24        | 10          | 8        | 1         | 2                                           |
+| b) | 24           | 36        | 13          | 12       | 1         | 0                                           |
+| c) | 24           | 34        | 14          | 12       | 1         | 4                                           |
+| d) | 32           | 46        | 16          | 16       | 1         | 4                                           |
+| e) | 24           | 36        | 14          | 12       | 1         | 2                                           |
+| f) | 32           | 48        | 16          | 16       | 1         | 2                                           |
 
 ## 2.2
 
 ![lösung zu 2.2](./files/Übung2.2.drawio.png)
+
+## 2.3
+
+Lös.:
+
+wenn der Normalenvektor der Ebene senkrecht zum richtungsvektor der gerade ist, so sind Ebene und Gerade parralel zueinander. Andernfalls schneiden Sie sich in einem Punkt.
+$$
+\cos \alpha = \frac{\vec{n}_0 \cdot \vec{v}}{\|\vec{n}_0\| \cdot \|\vec{v}\|}
+$$
+$$
+\cos \alpha = \frac{
+    \begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}
+    \cdot
+    \begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}
+    }{
+    \|\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\|
+    \cdot
+    \|\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}\|
+    }
+$$
+$$
+\cos \alpha = \frac{3 \cdot 4 + 3 \cdot 1 + (-1) \cdot 2}{\sqrt{3^2+3^2+(-1)^2} \cdot \sqrt{4^2+1^2+2^2}}
+$$
+$$
+\cos \alpha = \frac{13}{\sqrt{399}}
+$$
+$$
+\alpha = \cos^{-1} (\frac{13}{\sqrt{399}}) ≈ \underline{\underline{0,862140°}}
+$$
+Da der Normalenvektor der Ebene und der Richungsvektor der Gerade in einem spitzen Winkel zueinander stehen, schneidet die Gerade die ebene in einem Punkt.
