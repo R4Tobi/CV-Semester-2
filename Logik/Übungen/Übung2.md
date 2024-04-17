@@ -2,7 +2,7 @@
 
 ## 2.1
 
-**Individuenkonstante, Prädikatssymbol, Funktionssymbol, variablenfreier term, atomarer Satz, aussagenlogischer Satz**
+### Individuenkonstante, Prädikatssymbol, Funktionssymbol, variablenfreier term, atomarer Satz, aussagenlogischer Satz
 
 - a) atomarer Satz
 - b) Prädikatssymbol(Smaller()), Individuenkonstante(a, b), Funktionssymbol(rm())
