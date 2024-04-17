@@ -20,27 +20,15 @@
 Lös.:
 
 wenn der Normalenvektor der Ebene senkrecht zum richtungsvektor der gerade ist, so sind Ebene und Gerade parralel zueinander. Andernfalls schneiden Sie sich in einem Punkt.
-$$
-\cos \alpha = \frac{\vec{n}_0 \cdot \vec{v}}{\|\vec{n}_0\| \cdot \|\vec{v}\|}
-$$
-$$
-\cos \alpha = \frac{
-    \begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}
-    \cdot
-    \begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}
-    }{
-    \|\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\|
-    \cdot
-    \|\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}\|
-    }
-$$
-$$
-\cos \alpha = \frac{3 \cdot 4 + 3 \cdot 1 + (-1) \cdot 2}{\sqrt{3^2+3^2+(-1)^2} \cdot \sqrt{4^2+1^2+2^2}}
-$$
-$$
-\cos \alpha = \frac{13}{\sqrt{399}}
-$$
-$$
-\alpha = \cos^{-1} (\frac{13}{\sqrt{399}}) ≈ \underline{\underline{0,862140°}}
-$$
+
+$\cos \alpha = \frac{\vec{n}_0 \cdot \vec{v}}{\|\vec{n}_0\| \cdot \|\vec{v}\|}$
+
+$\cos \alpha = \frac{\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\cdot\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}}{\|\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\|\cdot\|\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}\|}$
+
+$\cos \alpha = \frac{3 \cdot 4 + 3 \cdot 1 + (-1) \cdot 2}{\sqrt{3^2+3^2+(-1)^2} \cdot \sqrt{4^2+1^2+2^2}}$
+
+$\cos \alpha = \frac{13}{\sqrt{399}}$
+
+$\alpha = \cos^{-1} (\frac{13}{\sqrt{399}}) ≈ \underline{\underline{0,862140°}}$
+
 Da der Normalenvektor der Ebene und der Richungsvektor der Gerade in einem spitzen Winkel zueinander stehen, schneidet die Gerade die ebene in einem Punkt.
