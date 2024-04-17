@@ -23,7 +23,7 @@ wenn der Normalenvektor der Ebene senkrecht zum richtungsvektor der gerade ist, 
 
 $\cos \alpha = \frac{\vec{n}_0 \cdot \vec{v}}{\|\vec{n}_0\| \cdot \|\vec{v}\|}$
 
-$\cos \alpha = \frac{\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\cdot\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}}{\|\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\|\cdot\|\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}\|}$
+$\cos \alpha = \frac{\begin{pmatrix} 3 \\ 3 \\ -1 \end{pmatrix}\cdot\begin{pmatrix} 4 \\ 1 \\ 2 \end{pmatrix}}{\sqrt{3^2+3^2+(-1)^2} \cdot \sqrt{4^2+1^2+2^2}}$
 
 $\cos \alpha = \frac{3 \cdot 4 + 3 \cdot 1 + (-1) \cdot 2}{\sqrt{3^2+3^2+(-1)^2} \cdot \sqrt{4^2+1^2+2^2}}$
 
