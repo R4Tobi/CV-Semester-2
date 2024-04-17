@@ -19,7 +19,7 @@
   - obere Schranke: Sind alle Folgenglieder einer gegebenen Folge kleiner oder gleich einer Zahl O, so nennt man diese Zahl eine obere Schranke der Folge. Jede Zahl die größer als eine obere Schranke ist, ist ebenfalls eine obere Schranke.
 - beschränkte Folgen: Eine Folge, die sowohl eine untere als auch eine obere Schranke besitzt nennt man beschränkt. Eine Folge, die eine untere Schranke hat, nennt man nach unten beschränkt. Eine Folge, die eine obere Schranke hat, nennt man nach oben beschränkt.
 - Supremum: Das Supremum einer Menge ist ein Element, welches oberhalb (jenseits) aller anderen Elemente in liegt. Das bedeutet, dass das Supremum nicht nur das größte Element unter den anderen Elementen sein muss, sondern auch jenseits der Menge liegen kann.
-- Infimum: Das Infimum (deutsch „untere Grenze“) einer Menge ist analog definiert, als „unmittelbar Darunterliegendes“ bzw. größte untere Schranke.
+- Infimum: Das Infimum (deutsch „untere Grenze") einer Menge ist analog definiert, als „unmittelbar Darunterliegendes" bzw. größte untere Schranke.
 
 #### Was unterscheidet *Q* von *R*
 
