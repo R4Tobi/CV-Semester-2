@@ -35,7 +35,16 @@ Da der Normalenvektor der Ebene und der Richungsvektor der Gerade in einem spitz
 
 ### b)
 
-1. Wenn dder Graph die Ebene, die das Dreieck aufspannt schniedet, ist das eine hinreichende Bedingung dafür, das die Gerade das Dreieck schneidet.
+1. Wenn der Graph die Ebene, die das Dreieck aufspannt schniedet, ist das eine hinreichende Bedingung dafür, das die Gerade das Dreieck schneidet.
 2. Ist der Schnittpunkt mit der Ebene im Dreieck, dann sind alle baryzentrischen Koordinaten zwischen Punkt nd Dreieck im Intervall [0;1].
 
 $g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + t \pmatrix{4 \cr 1 \cr 2}$
+
+Bestimmung der Kantenvektoren des Dreiecks
+
+$\vec{k}_{ac} = \vec{ac} = \pmatrix{1,3 + 1 \cr 1,5 - 1 \cr 8 + 1} = \pmatrix{2,3 \cr 1,5 \cr 9}$
+$\vec{k}_{ab} = \vec{ab} = \pmatrix{2 + 1 \cr 0 - 1 \cr 0 + 1} = \pmatrix{3 \cr -1 \cr 1}$
+
+Normalenvektor des Dreiecks bestimmen
+
+$\vec{k}_{ab} \times \vec{k}_{ac} = \pmatrix{0,5 \cdot 1 - 9 \cdot (-1) \cr 9 \cdot 3 - 2,3 \cdot 1 \cr 2,3 \cdot (-1) - 0,5 \cdot 3} = \pmatrix{9,5 \cr 24,7 \cr -3,8}$
