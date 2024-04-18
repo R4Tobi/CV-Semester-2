@@ -74,11 +74,11 @@ $\ \ \ \ \ \ \ 0 = -55,1 + 55,1t $
 
 $\ 55,1 = 55,1t $
 
-$\ \ \ \ \ \ \ t = 1$
+$\ \ \ \ \ \ \ \underline{t = 1}$
 
 #### Einsetzen von $t=1$ in $g$
 
-$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + 1 \pmatrix{4 \cr 1 \cr 2} = \pmatrix{1 \cr 1 \cr 4} \Rightarrow \underline{S(1 | 1 | 4)}$
+$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + 1 \pmatrix{4 \cr 1 \cr 2} = \pmatrix{1 \cr 1 \cr 4} \Rightarrow \underline{\underline{S(1 | 1 | 4)}}$
 
 Dreieck ABC mit $A(-1|1|-1)$, $B(2|0|0)$, $C(1,3|1,5|8)$
 
