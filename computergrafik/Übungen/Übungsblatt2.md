@@ -66,7 +66,15 @@ $\ \ \ \ \ \ \ \ \underline{a = -19}$
 
 #### Geradengleichung in die Ebenengleichung einsetzen
 
-$E: 0 = 9,5x + 24,7y - 3,8z - 19 \\\ \ \ \ \ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t) \\\ \ \ \ \ \ \ 0 = -55,1 + 55,1t \\\ 55,1 = 55,1t \\\ \ \ \ \ \ \ t = 1$
+$E: 0 = 9,5x + 24,7y - 3,8z - 19 $
+
+$\ \ \ \ \ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t) $
+
+$\ \ \ \ \ \ \ 0 = -55,1 + 55,1t $
+
+$\ 55,1 = 55,1t $
+
+$\ \ \ \ \ \ \ t = 1$
 
 #### Einsetzen von $t=1$ in $g$
 
@@ -76,5 +84,14 @@ Dreieck ABC mit $A(-1|1|-1)$, $B(2|0|0)$, $C(1,3|1,5|8)$
 
 Schnittpunkt S mit $S(1|1|4)$
 
-Bestimmung des Vektors vom Stützpunkt (der Ebene) zum Schnittpunkt
+#### Bestimmung des Vektors vom Stützpunkt (der Ebene) zum Schnittpunkt
 
+$\vec{AS} = \pmatrix{1 + 1 \cr 1 - 1 \cr 4 + 1} = \pmatrix{2 \cr 0 \cr 5}$
+
+#### Flächenvektoren zu Bestimmung der Baryzentrischen Koordinaten
+
+$\vec{n}_0 = {\vec{AB} \times \vec{AC}} = \pmatrix{-9,5 \cr -24,7 \cr 3,8} \ \ \ |\vec{n}_0|=\sqrt{(-9,5)^2 + (-24,7)^2 + 3,8^2}$
+
+$\vec{n}_1 = {\vec{AS} \times \vec{AC}} = \pmatrix{-9,5 \cr -24,7 \cr 3,8} \ \ \ |\vec{n}_1|=\sqrt{(-2,5)^2 + (-6,5)^2 + 1^2}$
+
+$\vec{n}_2 = {\vec{AB} \times \vec{AS}} = \pmatrix{-9,5 \cr -24,7 \cr 3,8} \ \ \ |\vec{n}_2|=\sqrt{(-5)^2 + (-13)^2 + 2^2}$
