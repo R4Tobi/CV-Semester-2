@@ -60,9 +60,17 @@ Stützvektor $\vec{a}$ einsetzen
 
 $E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a \\
 \ \ \ \ \ \ \ \ 0 = 19 + a$ | $-19 \\
-$\ \ \ \ \ \ \ \ \underline{a = -19}$
+\ \ \ \ \ \ \ \ \underline{a = -19}$
 
 Geradengleichung in die Ebenengleichung einsetzen
 
-$E: 0 = 9,5x + 24,7y - 3,8z - 19$
-$\ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t)$
+$E: 0 = 9,5x + 24,7y - 3,8z - 19 \\
+\ \ \ \ \ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t) \\
+\ \ \ \ \ \ \ 0 = -55,1 + 55,1t \\
+\ 55,1 = 55,1t \\
+\ \ \ \ \ \ \ t = 1$
+
+Einsetzen von $t=1$ in $g$
+
+$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + 1 \pmatrix{4 \cr 1 \cr 2} \\
+\ \ \ \ \ = \pmatrix{1 \cr 1 \cr 4} \Rightarrow S(1 | 1 | 4)$
