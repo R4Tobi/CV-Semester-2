@@ -55,9 +55,13 @@ $\vec{k_{ab}} \times \vec{k_{ac}} = \pmatrix{0,5 \cdot 1 - 9 \cdot (-1) \cr 9 \c
 Koordinatenform der Ebene, in der das Dreieck liegt:
 
 $E:\ 0 = 9,5x + 24,7y -3,8z + a$
+
 Stützvektor $\vec{a}$ einsetzen
+
 $E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a$
+
 $\ \ \ \ \ \ \ \ 0 = 19 + a$ | $-19$
+
 $\ \ \ \ \ \ \ \ \underline{a = -19}$
 
 Geradengleichung in die Ebenengleichung einsetzen
