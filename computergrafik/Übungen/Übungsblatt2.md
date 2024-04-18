@@ -59,7 +59,9 @@ $E:\ 0 = 9,5x + 24,7y -3,8z + a$
 #### Stützvektor $\vec{a}$ einsetzen
 
 $E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a $
+
 $\ \ \ \ \ \ \ \ 0 = 19 + a | -19 $
+
 $\ \ \ \ \ \ \ \ \underline{a = -19}$
 
 #### Geradengleichung in die Ebenengleichung einsetzen
