@@ -42,35 +42,45 @@ Da der Normalenvektor der Ebene und der Richungsvektor der Gerade in einem spitz
 
 $g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + t \pmatrix{4 \cr 1 \cr 2}$
 
-Bestimmung der Kantenvektoren des Dreiecks
+#### Bestimmung der Kantenvektoren des Dreiecks
 
 $\vec{k_{ac}} = \vec{ac} = \pmatrix{1,3 + 1 \cr 1,5 - 1 \cr 8 + 1} = \pmatrix{2,3 \cr 1,5 \cr 9}$
 
 $\vec{_{ab}} = \vec{ab} = \pmatrix{2 + 1 \cr 0 - 1 \cr 0 + 1} = \pmatrix{3 \cr -1 \cr 1}$
 
-Normalenvektor des Dreiecks bestimmen
+#### Normalenvektor des Dreiecks bestimmen
 
 $\vec{k_{ab}} \times \vec{k_{ac}} = \pmatrix{0,5 \cdot 1 - 9 \cdot (-1) \cr 9 \cdot 3 - 2,3 \cdot 1 \cr 2,3 \cdot (-1) - 0,5 \cdot 3} = \pmatrix{9,5 \cr 24,7 \cr -3,8}$
 
-Koordinatenform der Ebene, in der das Dreieck liegt:
+#### Koordinatenform der Ebene, in der das Dreieck liegt
 
 $E:\ 0 = 9,5x + 24,7y -3,8z + a$
 
-Stützvektor $\vec{a}$ einsetzen
+#### Stützvektor $\vec{a}$ einsetzen
 
-$E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a \\
-\ \ \ \ \ \ \ \ 0 = 19 + a$ | $-19 \\
-\ \ \ \ \ \ \ \ \underline{a = -19}$
+$
+E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a \\
+\ \ \ \ \ \ \ \ 0 = 19 + a | -19 \\
+\ \ \ \ \ \ \ \ \underline{a = -19}
+$
 
-Geradengleichung in die Ebenengleichung einsetzen
+#### Geradengleichung in die Ebenengleichung einsetzen
 
-$E: 0 = 9,5x + 24,7y - 3,8z - 19 \\
+$
+E: 0 = 9,5x + 24,7y - 3,8z - 19 \\
 \ \ \ \ \ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t) \\
 \ \ \ \ \ \ \ 0 = -55,1 + 55,1t \\
 \ 55,1 = 55,1t \\
-\ \ \ \ \ \ \ t = 1$
+\ \ \ \ \ \ \ t = 1
+$
 
-Einsetzen von $t=1$ in $g$
+#### Einsetzen von $t=1$ in $g$
 
-$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + 1 \pmatrix{4 \cr 1 \cr 2} \\
-\ \ \ \ \ = \pmatrix{1 \cr 1 \cr 4} \Rightarrow S(1 | 1 | 4)$
+$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + 1 \pmatrix{4 \cr 1 \cr 2} = \pmatrix{1 \cr 1 \cr 4} \Rightarrow \underline{S(1 | 1 | 4)}$
+
+Dreieck ABC mit $A(-1|1|-1)$, $B(2|0|0)$, $C(1,3|1,5|8)$
+
+Schnittpunkt S mit $S(1|1|4)$
+
+Bestimmung des Vektors vom Stützpunkt (der Ebene) zum Schnittpunkt
+
