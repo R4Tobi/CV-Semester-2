@@ -105,3 +105,5 @@ $v = \frac{|\vec{n}_2|}{\vec{n}_0|} = \underline{\underline{\frac{5}{19}}}$
 $w = 1-u-v = 1 - \frac{10}{19} - \frac{5}{19} = \underline{\underline{\frac{4}{19}}}$
 
 $0 \leq u,v,w \leq 1 \ \ \Rightarrow$ Schnittpunkt liegt im Dreieck
+
+### c)
