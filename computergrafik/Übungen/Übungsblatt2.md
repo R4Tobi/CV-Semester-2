@@ -98,10 +98,10 @@ $\vec{n}_2 = {\vec{AB} \times \vec{AS}} = \pmatrix{-9,5 \cr -24,7 \cr 3,8} \ \ \
 
 #### Bestimmung der baryzentrischen Koordinaten
 
-$u = \frac{|\vec{n}_1|}{\vec{n}_0|} = \underline{\frac{10}{19}}$
+$u = \frac{|\vec{n}_1|}{\vec{n}_0|} = \underline{\underline{\frac{10}{19}}}$
 
-$v = \frac{|\vec{n}_2|}{\vec{n}_0|} = \underline{\frac{5}{19}}$
+$v = \frac{|\vec{n}_2|}{\vec{n}_0|} = \underline{\underline{\frac{5}{19}}}$
 
-$w = 1-u-v = 1 - \frac{10}{19} - \frac{5}{19} = \underline{\frac{4}{19}}$
+$w = 1-u-v = 1 - \frac{10}{19} - \frac{5}{19} = \underline{\underline{\frac{4}{19}}}$
 
-$0 \leq u,v,w \leq 1 \ \ \Rightarrow Schnittpunkt liegt im Dreieck$
+$0 \leq u,v,w \leq 1 \ \ \Rightarrow$ Schnittpunkt liegt im Dreieck
