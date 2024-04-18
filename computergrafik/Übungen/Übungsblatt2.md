@@ -17,7 +17,7 @@
 
 ## 2.3
 
-//updated Computergrafik/Übung2.3b
+updated Computergrafik/Übung2.3b
 
 ### a)
 
@@ -45,8 +45,22 @@ $g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + t \pmatrix{4 \cr 1 \cr 2}$
 Bestimmung der Kantenvektoren des Dreiecks
 
 $\vec{k_{ac}} = \vec{ac} = \pmatrix{1,3 + 1 \cr 1,5 - 1 \cr 8 + 1} = \pmatrix{2,3 \cr 1,5 \cr 9}$
+
 $\vec{_{ab}} = \vec{ab} = \pmatrix{2 + 1 \cr 0 - 1 \cr 0 + 1} = \pmatrix{3 \cr -1 \cr 1}$
 
 Normalenvektor des Dreiecks bestimmen
 
 $\vec{k_{ab}} \times \vec{k_{ac}} = \pmatrix{0,5 \cdot 1 - 9 \cdot (-1) \cr 9 \cdot 3 - 2,3 \cdot 1 \cr 2,3 \cdot (-1) - 0,5 \cdot 3} = \pmatrix{9,5 \cr 24,7 \cr -3,8}$
+
+Koordinatenform der Ebene, in der das Dreieck liegt:
+
+$E:\ 0 = 9,5x + 24,7y -3,8z + a$
+Stützvektor $\vec{a}$ einsetzen
+$E:\ 0 = 9,5(-1) + 24,7(1)-3,8(-1) + a$
+$\ \ \ \ \ \ \ \ 0 = 19 + a$ | $-19$
+$\ \ \ \ \ \ \ \ \underline{a = -19}$
+
+Geradengleichung in die Ebenengleichung einsetzen
+
+$E: 0 = 9,5x + 24,7y - 3,8z - 19$
+$\ \ \ 0 = 9,5(-3 +4t) + 24,7(t) - 3,8(2+2t)$
