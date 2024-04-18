@@ -17,7 +17,7 @@
 
 ## 2.3
 
-Lös.:
+### a)
 
 wenn der Normalenvektor der Ebene senkrecht zum richtungsvektor der gerade ist, so sind Ebene und Gerade parralel zueinander. Andernfalls schneiden Sie sich in einem Punkt.
 
@@ -32,3 +32,10 @@ $\cos \alpha = \frac{13}{\sqrt{399}}$
 $\alpha = \cos^{-1} (\frac{13}{\sqrt{399}}) ≈ \underline{\underline{0,862140°}}$
 
 Da der Normalenvektor der Ebene und der Richungsvektor der Gerade in einem spitzen Winkel zueinander stehen, schneidet die Gerade die ebene in einem Punkt.
+
+### b)
+
+1. Wenn dder Graph die Ebene, die das Dreieck aufspannt schniedet, ist das eine hinreichende Bedingung dafür, das die Gerade das Dreieck schneidet.
+2. Ist der Schnittpunkt mit der Ebene im Dreieck, dann sind alle baryzentrischen Koordinaten zwischen Punkt nd Dreieck im Intervall [0;1].
+
+$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + t \pmatrix{4 \cr 1 \cr 2}$
