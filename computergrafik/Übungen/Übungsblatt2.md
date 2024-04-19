@@ -17,8 +17,6 @@
 
 ## 2.3
 
-updated Computergrafik/Übung2.3b
-
 ### a)
 
 wenn der Normalenvektor der Ebene senkrecht zum richtungsvektor der gerade ist, so sind Ebene und Gerade parralel zueinander. Andernfalls schneiden Sie sich in einem Punkt.
