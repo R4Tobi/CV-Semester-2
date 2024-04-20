@@ -10,6 +10,14 @@
 |- .gitignore
 |- README.md
 |
+|-- Algorithmen und Datenstrukturen
+  |- mitschrift.md
+  |
+  |-- Übung                          // Beinhaltet die Java-Dateien für Übungen
+    |-- aud                          // Java Bibliothek für AuD 
+    |-- Übung1                       
+    |-- Übung2
+|
 |-- Computergrafik
   |- mitschrift.md
   |
