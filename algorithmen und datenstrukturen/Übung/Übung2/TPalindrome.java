@@ -3,73 +3,52 @@ package Übung2;
 import aud.Stack;
 
 /**
- * Die Klasse TPalindrome bietet eine Methode zur Überprüfung, ob ein Text ein sogenanntes "T-Palindrom" ist.
- * Ein T-Palindrom ist ein Text, der als Palindrom gelesen werden kann, wobei Inhalt in runden Klammern ignoriert wird,
- * wenn dieser ebenfalls ein Palindrom ist. Zusätzlich verarbeitet die Methode auch Sternchen (*) im Text.
+ * Die Klasse TPalindrome bietet eine Methode zum Überprüfen von String auf T-Palindrom-Eigenschaften. Das t_Palindrom ist eine Erfindung von Prof. Tönnies, OvGU
+ * Ein T-Palindrom ist ein Text, der auch nach Ersetzung aller palindromischen Substrings in Klammern durch einen Stern ein Palindrom bleibt. z.B. lage(otto)rr*egal -> lage*rr*egal
  */
 public class TPalindrome {
-    
     /**
-     * Überprüft, ob der übergebene Text ein T-Palindrom ist.
-     *
-     * @param text Der zu überprüfende Text.
-     * @return true, wenn der Text ein T-Palindrom ist, sonst false.
-     */
+    * Überprüft, ob ein gegebener Text ein T-Palindrom ist.
+    *
+    * @param text Der zu überprüfende Text.
+    * @return true, wenn der Text ein T-Palindrom ist, sonst false.
+    */
     public static boolean isTPalindrome(String text) {
         Stack<Character> stack = new Stack<>();
         
-        // Durchläuft den gesamten Text Buchstabe für Buchstabe
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-
-            // Verarbeitung einer öffnenden Klammer
+            
             if (c == '(') {
+                // Beginne das Einsammeln von Zeichen bis zur schließenden Klammer
                 stack.push(c);
-            } 
-            // Verarbeitung einer schließenden Klammer
-            else if (c == ')') {
+            } else if (c == ')') {
+                // Sammle alle Zeichen im inneren der Klammer
                 StringBuilder temp = new StringBuilder();
-                // Extrahieren des Inhalts zwischen den Klammern
                 while (!stack.is_empty() && stack.top() != '(') {
                     temp.insert(0, stack.pop());
                 }
                 
-                // Überprüfen auf ungültige Klammerung
-                if (stack.is_empty()) {
-                    return false;
-                }
-                
-                // Entfernen der öffnenden Klammer
-                stack.pop();
-
-                // Überprüfen, ob der Inhalt zwischen den Klammern ein Palindrom ist
-                if (isPalindrome(temp.toString())) {
-                    // Sternchen-Logik nach dem Palindrom
-                    if (!stack.is_empty() && stack.top() == '*') {
-                        stack.pop();
-                    } else {
+                if (!stack.is_empty() && stack.top() == '(') {
+                    stack.pop(); // Entferne die öffnende Klammer
+                    if (isPalindrome(temp.toString())) {
+                        // Ersetze den palindromischen Teil in Klammern durch einen Stern
                         stack.push('*');
+                    } else {
+                        // Der Inhalt der Klammern ist kein Palindrom
+                        return false;
                     }
                 } else {
-                    return false; // Kein Palindrom zwischen den Klammern
+                    // Fehlende öffnende Klammer
+                    return false;
                 }
-            } 
-            // Verarbeitung alphabetischer Zeichen
-            else if (Character.isAlphabetic(c)) {
-                // Sternchen-Logik
-                if (!stack.is_empty() && stack.top() == '*') {
-                    stack.pop();
-                } else {
-                    stack.push(c);
-                }
-            } 
-            // Ungültiges Zeichen gefunden
-            else {
-                return false;
+            } else {
+                // Normales Zeichen oder Stern, einfach auf den Stack legen
+                stack.push(c);
             }
         }
 
-        // Überprüfung des restlichen Stapel-Inhalts auf Palindrom
+        // Überprüfe ob das, was auf dem Stack übrig bleibt, ein Palindrom ist
         StringBuilder remaining = new StringBuilder();
         while (!stack.is_empty()) {
             remaining.append(stack.pop());
@@ -77,39 +56,49 @@ public class TPalindrome {
 
         return isPalindrome(remaining.toString());
     }
-
     /**
-     * Hilfsmethode zur Überprüfung, ob ein String ein Palindrom ist.
+     * Hilfsmethode zum Überprüfen, ob ein gegebener String ein Palindrom ist. Aus Übung1 übernommen.
      *
      * @param str Der zu überprüfende String.
-     * @return true, wenn str ein Palindrom ist, sonst false.
+     * @return true, wenn der String ein Palindrom ist, sonst false.
      */
-    private static boolean isPalindrome(String str) {
-        int left = 0;
-        int right = str.length() - 1;
-        while (left < right) {
-            if (str.charAt(left++) != str.charAt(right--)) {
-                return false;
+    private static boolean isPalindrome(String text) {
+        // create stack
+        Stack<Character> stack = new Stack<>();
+
+
+        // push all letters to stack
+        for (int i = 0; i < text.length() ; i++) {
+            if(Character.isLetter(text.charAt(i))){
+                stack.push(Character.toLowerCase(text.charAt(i)));
             }
         }
+
+        // compare letters by popping from stack and comparing with text
+        for (int i = 0; i < text.length() ; i++) {
+            if(Character.isLetter(text.charAt(i))){
+                if(stack.pop() != Character.toLowerCase(text.charAt(i))){
+                    return false;
+                }
+            }
+        }
+
         return true;
     }
 
     /**
-     * Hauptmethode zum Testen der isTPalindrome Methode mit unterschiedlichen Strings.
-     *
+     * Hauptmethode zum Testen der TPalindrom-Überprüfung.
+     * 
      * @param args Kommandozeilenargumente, nicht verwendet.
      */
     public static void main(String[] args) {
-        String[] true_ = new String[]{"abc(ah(otto)v(atta)ha)cba", "(*)", "otto", "al(otto)la", "abc(aha)(u)cba" , "abc(ah(otto)v(atta)ha)cba"}; // Strings, die T-Palindrome sein sollten
-        String[] false_ = new String[] { "a(b)cca(b)", "abc", "abc(ah(otto)h)cba" }; // Strings, die keine T-Palindrome sein sollten
+        String[] true_ = new String[]{"lage(otto)rr*egal", "abc(ah(otto)v(atta)ha)cba", "(*)", "otto", "al(otto)la", "abc(aha)(u)cba" , "abc(ah(otto)v(atta)ha)cba"}; // Beispieltexte für einen T-Palindrom
+        String[] false_ = new String[] { "a(b)cca(b)", "abc", "abc(ah(otto)h)cba" };
         
-        // Testen der Strings, die T-Palindrome sein sollten
         for(String item : true_){
             System.out.println(item + ":" + isTPalindrome(item));
         }
 
-        // Testen der Strings, die keine T-Palindrome sein sollten
         for (String item : false_) {
             System.out.println(item + ":" + isTPalindrome(item));
         }
