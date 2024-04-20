@@ -56,6 +56,10 @@ public class IntSList {
         list.push_front(81);
         list.push_front(74);
         list.push_front(42);
+        list.push_front(34);
+        list.push_front(21);
+        list.push_front(17);
+        list.push_front(12);
 
         System.out.println("Original list: " + list.li);
 
