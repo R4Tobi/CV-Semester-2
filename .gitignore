@@ -3,5 +3,5 @@
 *.pdf
 *.txt
 *.iml
-/.idea
-/out
+*/.idea
+*/out
