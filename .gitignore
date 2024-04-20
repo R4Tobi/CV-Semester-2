@@ -2,3 +2,6 @@
 *.aux
 *.pdf
 *.txt
+*.iml
+*/.idea
+*/out
