@@ -105,3 +105,24 @@ $w = 1-u-v = 1 - \frac{10}{19} - \frac{5}{19} = \underline{\underline{\frac{4}{1
 $0 \leq u,v,w \leq 1 \ \ \Rightarrow$ Schnittpunkt liegt im Dreieck
 
 ### c)
+$g: \vec{x} = \pmatrix{-3 \cr 0 \cr 2} + t \pmatrix{4 \cr 1 \cr 2}$
+$\\$
+$K: (x + 1)^2 + (y + 1,5)^2 + (z -2)^2= 3^2$ (entspricht der Koordinatenform) 
+$\\\\$
+
+#### Die Gerade in die Formel der Kugel einsetzen  $\\$
+$((-3 + 4t) + (t+1,5)^2 + (2t)^2) = 9 \\$
+$\\$
+#### Klammern lösen und Zusammenfassen
+$\\$
+$21t^2 - 29t +18,25 = 9$ \ \ | -9 $\\$
+$21t^2-29t+9,25 = 0$ \ \ \ \ | :21 $\\$
+$t^2-\frac{29}{21}t + \frac{37}{84} = 0$ \ \ \ \ \ | pq-Formel mit $p=-\frac{29}{21}$ und $p=\frac{37}{84}\\$
+
+
+$t_{1,2}= -\frac{p}{2} \pm \sqrt{\frac{p^2}{4} - q}\\$
+$\\$
+$\Rightarrow t_1=\frac{37}{42}$ und $t_2=\frac{1}{2}\\$
+
+
+$0 \leq t_1,t_2 \leq 1 \ \ \ \Rightarrow$ Die Gerade schneidet die Kugel in zwei Punken.
