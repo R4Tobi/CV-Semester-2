@@ -53,6 +53,7 @@ public class TPalindrome {
         while (!stack.is_empty()) {
             remaining.append(stack.pop());
         }
+        System.out.println(remaining.toString());
 
         return isPalindrome(remaining.toString());
     }
@@ -60,26 +61,21 @@ public class TPalindrome {
      * Hilfsmethode zum Überprüfen, ob ein gegebener String ein Palindrom ist. Aus Übung1 übernommen.
      *
      * @param str Der zu überprüfende String.
-     * @return true, wenn der String ein Palindrom ist, sonst false.
+     * @return -> true, wenn der String ein Palindrom ist, sonst -> false.
      */
     private static boolean isPalindrome(String text) {
         // create stack
         Stack<Character> stack = new Stack<>();
 
-
         // push all letters to stack
         for (int i = 0; i < text.length() ; i++) {
-            if(Character.isLetter(text.charAt(i))){
-                stack.push(Character.toLowerCase(text.charAt(i)));
-            }
+            stack.push(Character.toLowerCase(text.charAt(i)));
         }
 
         // compare letters by popping from stack and comparing with text
         for (int i = 0; i < text.length() ; i++) {
-            if(Character.isLetter(text.charAt(i))){
-                if(stack.pop() != Character.toLowerCase(text.charAt(i))){
-                    return false;
-                }
+            if(stack.pop() != Character.toLowerCase(text.charAt(i))){
+                return false;
             }
         }
 
@@ -92,7 +88,7 @@ public class TPalindrome {
      * @param args Kommandozeilenargumente, nicht verwendet.
      */
     public static void main(String[] args) {
-        String[] true_ = new String[]{"lage(otto)rr*egal", "abc(ah(otto)v(atta)ha)cba", "(*)", "otto", "al(otto)la", "abc(aha)(u)cba" , "abc(ah(otto)v(atta)ha)cba"}; // Beispieltexte für einen T-Palindrom
+        String[] true_ = new String[]{"lage(otto)rr*egal", "abc(ah(otto)v(atta)ha)cba", "(*)", "otto", "al(otto)la", "abc(aha)(u)cba" , "abc(ah(otto)v(atta)ha)cba", "lage(otto)rr*egal"}; // Beispieltexte für einen T-Palindrom
         String[] false_ = new String[] { "a(b)cca(b)", "abc", "abc(ah(otto)h)cba" };
         
         for(String item : true_){
