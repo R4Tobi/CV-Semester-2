@@ -1,18 +1,18 @@
 package Übung2;
 
 /**
- * A class representing a node in a singly linked list
- * 
- * @param <T> The type of data stored in the node
+ * Eine Klasse, die einen Knoten in einer einfach verketteten Liste darstellt.
+ *
+ * @param <T> Der Datentyp der im Knoten gespeicherten Daten.
  */
 public class LinkedNode<T> {
-    private T data_; // The data stored in the node
-    private LinkedNode<T> next_; // Reference to the next node
+    private T data_; // Die im Knoten gespeicherten Daten.
+    private LinkedNode<T> next_; // Referenz auf den nächsten Knoten.
 
     /**
-     * Constructs a new LinkedNode with the given data and null next reference
-     * 
-     * @param data The data to be stored in the node
+     * Konstruiert einen neuen LinkedNode mit den gegebenen Daten und einer null-Referenz für den nächsten Knoten.
+     *
+     * @param data Die im Knoten zu speichernden Daten.
      */
     public LinkedNode(T data) {
         this.data_ = data;
@@ -20,10 +20,10 @@ public class LinkedNode<T> {
     }
 
     /**
-     * Constructs a new LinkedNode with the given data and next node reference
-     * 
-     * @param data The data to be stored in the node
-     * @param next The reference to the next node
+     * Konstruiert einen neuen LinkedNode mit den gegebenen Daten und einer Referenz auf den nächsten Knoten.
+     *
+     * @param data Die im Knoten zu speichernden Daten.
+     * @param next Die Referenz auf den nächsten Knoten.
      */
     public LinkedNode(T data, LinkedNode<T> next) {
         this.data_ = data;
@@ -31,45 +31,45 @@ public class LinkedNode<T> {
     }
 
     /**
-     * Retrieves the data stored in the node
-     * 
-     * @return The data stored in the node
+     * Gibt die im Knoten gespeicherten Daten zurück.
+     *
+     * @return Die im Knoten gespeicherten Daten.
      */
     public T getData() {
         return data_;
     }
 
     /**
-     * Sets the data stored in the node
-     * 
-     * @param data The data to be stored in the node
+     * Setzt die im Knoten zu speichernden Daten.
+     *
+     * @param data Die im Knoten zu speichernden Daten.
      */
     public void setData(T data) {
         this.data_ = data;
     }
 
     /**
-     * Retrieves the reference to the next node
-     * 
-     * @return The reference to the next node
+     * Gibt die Referenz auf den nächsten Knoten zurück.
+     *
+     * @return Die Referenz auf den nächsten Knoten.
      */
     public LinkedNode<T> getNext() {
         return next_;
     }
 
     /**
-     * Sets the reference to the next node
-     * 
-     * @param next The reference to the next node
+     * Setzt die Referenz auf den nächsten Knoten.
+     *
+     * @param next Die neue Referenz auf den nächsten Knoten.
      */
     public void setNext(LinkedNode<T> next) {
         this.next_ = next;
     }
 
     /**
-     * Returns a string representation of the node and its subsequent nodes
-     * 
-     * @return A string representation of the node and its subsequent nodes
+     * Gibt eine String-Repräsentation des Knotens und seiner nachfolgenden Knoten zurück.
+     *
+     * @return Eine String-Repräsentation des Knotens und seiner nachfolgenden Knoten.
      */
     @Override
     public String toString() {
@@ -85,40 +85,40 @@ public class LinkedNode<T> {
     }
 
     /**
-     * Main method to test the LinkedNode class
-     * 
-     * @param args Command line arguments (not used)
+     * Hauptmethode zum Testen der LinkedNode-Klasse.
+     *
+     * @param args Kommandozeilenargumente (werden hier nicht verwendet).
      */
     public static void main(String[] args) {
-        // Create nodes for Monday, Thursday, and Friday
-        LinkedNode<String> monday = new LinkedNode<>("Monday");
-        LinkedNode<String> thursday = new LinkedNode<>("Thursday");
-        LinkedNode<String> friday = new LinkedNode<>("Friday");
+        // Erstellung von Knoten für Montag, Donnerstag und Freitag
+        LinkedNode<String> monday = new LinkedNode<>("Montag");
+        LinkedNode<String> thursday = new LinkedNode<>("Donnerstag");
+        LinkedNode<String> friday = new LinkedNode<>("Freitag");
 
-        // Print initial list
-        System.out.println("Initial list:");
+        // Ausgabe der initialen Liste
+        System.out.println("Initiale Liste:");
         System.out.println(monday);
         System.out.println(thursday);
         System.out.println(friday);
 
-        // Add "Mensa gehen" and "Vorlesung besuchen"
+        // Hinzufügen von "Mensa gehen" und "Vorlesung besuchen"
         monday.setNext(new LinkedNode<>("Mensa gehen", thursday));
         thursday.setNext(new LinkedNode<>("Vorlesung besuchen", friday));
 
-        // Print list after adding tasks
-        System.out.println("\nList after adding tasks:");
+        // Ausgabe der Liste nach dem Hinzufügen der Aufgaben
+        System.out.println("\nListe nach dem Hinzufügen von Aufgaben:");
         System.out.println(monday);
         System.out.println(thursday);
         System.out.println(friday);
 
-        // Add more nodes for Tuesday and Wednesday
-        LinkedNode<String> tuesday = new LinkedNode<>("Tuesday", thursday);
+        // Weitere Knoten für Dienstag und Mittwoch hinzufügen
+        LinkedNode<String> tuesday = new LinkedNode<>("Dienstag", thursday);
         monday.setNext(tuesday);
-        LinkedNode<String> wednesday = new LinkedNode<>("Wednesday", friday);
+        LinkedNode<String> wednesday = new LinkedNode<>("Mittwoch", friday);
         tuesday.setNext(wednesday);
 
-        // Print list after adding Tuesday and Wednesday
-        System.out.println("\nList after adding Tuesday and Wednesday:");
+        // Ausgabe der Liste nach dem Hinzufügen von Dienstag und Mittwoch
+        System.out.println("\nListe nach dem Hinzufügen von Dienstag und Mittwoch:");
         System.out.println(monday);
     }
 }
