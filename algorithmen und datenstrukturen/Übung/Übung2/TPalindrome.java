@@ -11,7 +11,7 @@ public class TPalindrome {
     * Überprüft, ob ein gegebener Text ein T-Palindrom ist.
     *
     * @param text Der zu überprüfende Text.
-    * @return true, wenn der Text ein T-Palindrom ist, sonst false.
+    * @return -> true, wenn der Text ein T-Palindrom ist, sonst -> false.
     */
     public static boolean isTPalindrome(String text) {
         Stack<Character> stack = new Stack<>();
@@ -23,7 +23,7 @@ public class TPalindrome {
                 // Beginne das Einsammeln von Zeichen bis zur schließenden Klammer
                 stack.push(c);
             } else if (c == ')') {
-                // Sammle alle Zeichen im inneren der Klammer
+                // Sammelt alle Zeichen im inneren der Klammer
                 StringBuilder temp = new StringBuilder();
                 while (!stack.is_empty() && stack.top() != '(') {
                     temp.insert(0, stack.pop());
@@ -43,7 +43,7 @@ public class TPalindrome {
                     return false;
                 }
             } else {
-                // Normales Zeichen oder Stern, einfach auf den Stack legen
+                // Normales Zeichen oder Stern auf den Stack legen
                 stack.push(c);
             }
         }
