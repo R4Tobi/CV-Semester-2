@@ -2,7 +2,7 @@
 
 ## Inhalte zum 2ten Fachsemester Computervisualistik
 
-**Disclaimer**: Ich übernehme keine Verantwortung für die Korrektheit der Aufgaben. Die Nutzung der Lösungen erfolgt auf Eigenverantwortung.
+**Disclaimer**: Ich übernehme keine Verantwortung für die Korrektheit der Aufgaben. Die Nutzung der Lösungen erfolgt mit Eigenverantwortung.
 
 ### Ordnerstruktur
 ```plaintext
@@ -13,7 +13,7 @@
 |-- Computergrafik
   |- mitschrift.md
   |
-  |-- Programmieraufgaben            // C++ Programmieraufgeben
+  |-- Programmieraufgaben            // C++ Programmieraufgaben
   |-- Übungen
     |-- files                        // Dateien für Aufgaben
     |
