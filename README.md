@@ -1,0 +1,41 @@
+# CV Semester 2 - SoSe 24
+
+## Inhalte zum 2ten Fachsemester Computervisualistik
+
+**Disclaimer**: Ich übernehme keine Verantwortung für die Korrektheit der Aufgaben. Die Nutzung der Lösungen erfolgt auf Eigenverantwortung.
+
+### Ordnerstruktur
+```plaintext
+|- .gitattributes
+|- .gitignore
+|- README.md
+|
+|-- Computergrafik
+  |- mitschrift.md
+  |
+  |-- Programmieraufgaben            // C++ Programmieraufgeben
+  |-- Übungen
+    |-- files                        // Dateien für Aufgaben
+    |
+    |- Übungsblatt1.md
+    |- Übungsblatt2.md               // GitHub-Darstellung von Übungsblatt2.tex
+    |- Übungsblatt2.tex
+|
+|-- Logik
+  |- mitschrift.md
+  |
+  |-- Übungen
+    |- Übung1.md
+    |- Übung2.md
+    |- Übung3.md
+|
+|-- Mathe II
+  |- mitschrift.md
+  |
+  |-- Übungen
+    |- Übung1.md
+    |- Übung2.md
+|
+|-- Psychologie I
+  |- mitschrift.md  
+```
