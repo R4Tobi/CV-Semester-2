@@ -1,5 +1,11 @@
 # Vorlesung I
 
+## Übungen
+
+erreichte Punkte:.....25,5
+maximale Punkte:......38
+Prozent:..............67,1%
+
 ## Einführung
 
 - 2 Stunden Vorbereitung mit Video
