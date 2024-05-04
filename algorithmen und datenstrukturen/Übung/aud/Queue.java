@@ -104,35 +104,35 @@ public class Queue<T> extends AbstractQueue<T> {
 
       The modulo operation is defined as
 
-      <center><tt>a mod b := b-floor(a/b)*b</tt></center>
+      <div>{@code a mod b := b-floor(a/b)*b}</div>
 
-      where tt>floor(x)</tt> rounds to the greatest integer that is
+      where {@code floor(x)} rounds to the greatest integer that is
       less than or equal to x (i.e., "towards negative infinity").<p>
 
       This is what we want, because
 
-      <center><tt>a mod b = (a+k*b) mod b</tt> for any integer <tt>k</tt>
-      (regardless of sign)</center>
+      <div>{@code a mod b = (a+k*b) mod b} for any integer {@code k}
+      (regardless of sign)</div>
 
       For example consider an array of size 3 then position -1 should
       refer to the <em>last</em> entry
 
-      <center><tt>-1 mod 3 = -1+3 mod 3 = 2 mod 3 = 2</tt></center>
+      <div>{@code -1 mod 3 = -1+3 mod 3 = 2 mod 3 = 2}</div>
 
       Java (and similarly C/C++) defines the remainder operator
       differently such that the sign is treated "symmetrically" (not
       rounding towards negative infinity but towards 0):<p>
 
-      <center><tt>a%b = (-a%b) for b>=0</tt></center>
+      <div>{@code a%b = (-a%b) for b>=0}</div>
 
       For the example, we get
 
-      <center><tt>(-1)%3 = 1%3 = 1</tt></center>
+      <div>{@code (-1)%3 = 1%3 = 1}</div>
 
       which is <em>not</em> what we want as index into the buffer!<p>
 
-      We avoid this issue by adding <tt>-1+data_.length</tt> instead
-      of <tt>-1</tt>.<p>
+      We avoid this issue by adding {@code -1+data_.length} instead
+      of {@code -1}.<p>
 
       <b>Summary:</b>
       <ul>
@@ -141,7 +141,7 @@ public class Queue<T> extends AbstractQueue<T> {
       programming languages</em>.</li>
       <li>The same is true for the (rounding mode of the) integer
       division itself. The reason for the "non-mathematical" definition
-      is probably the behavior of the machine instructions (like <tt>idiv<</tt>
+      is probably the behavior of the machine instructions (like {@code idiv<}
       on Itel CPUs).</li>
       <li>Differences show up for <em>negative operands</em> And
       they can lead to subtle bugs!</li>

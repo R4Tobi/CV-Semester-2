@@ -32,9 +32,9 @@ public abstract class AbstractStack<T> {
   */
   public abstract void push(T x);
 
-  /** Get string representation <tt>"|a|b|c"</tt>.
-      (Here, <tt>"c"</tt> is stack top. <tt>"|"</tt> denotes empty
-      stack.)
+  /** Get string representation {@code "|a|b|c"}.
+      (Here, {@code "c"} is stack top. {@code "|"} denotes empty
+      stack.)<p>
   */
   @Override
   public String toString() {

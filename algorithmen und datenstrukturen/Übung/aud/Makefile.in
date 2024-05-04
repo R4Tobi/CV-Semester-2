@@ -1,0 +1,142 @@
+# -*- mode:makefile -*-
+
+# default options
+JFLAGS       = -g -Xlint:unchecked -Werror -deprecation
+JC           = javac
+
+JVM          = java
+JVMFLAGS     = -ea
+
+JAVADOC      = javadoc
+JAVADOCFLAGS = -protected -author -version
+
+DOXYGEN	     = doxygen
+
+SHELL        = /bin/bash  # Sun pool uses tcsh as default shell
+
+BROWSER	     = firefox
+BROWSERFLAGS =
+
+IN_MAKEROOT = $(if $(wildcard Makefile.in),true,)
+
+AUDCLASSDIR  = ..  # root of output directory
+AUDCLASSPATH = ..  # classpath
+
+PACKAGES = aud aud.adt aud.util aud.example aud.example.expr aud.test
+
+#PACKAGES = aud aud.adt aud.graph aud.graph.matrix aud.util \
+#	   aud.example aud.example.expr aud.example.hash aud.example.graph \
+#           aud.example.grid aud.test
+
+ifndef ABSMAKEROOT
+  ABSMAKEROOT = $(strip $(if $(IN_MAKEROOT),$(realpath .),\
+			  $(shell $(MAKE) -s -C .. pmakeroot)))
+endif
+
+# read user options
+
+ifndef CONFIGFILE
+  CONFIGFILE = Makefile.config
+endif
+
+-include $(ABSMAKEROOT)/$(CONFIGFILE)
+
+ifndef ABSCLASSDIR
+  ABSCLASSDIR  = $(strip $(if $(IN_MAKEROOT),$(realpath $(AUDCLASSDIR)),\
+		           $(shell $(MAKE) -s -C .. pclassdir)))
+endif
+
+ifndef ABSCLASSPATH
+  ABSCLASSPATH = $(strip $(if $(IN_MAKEROOT),$(realpath $(AUDCLASSPATH)),\
+	                  $(shell $(MAKE) -s -C .. pclasspath)))
+endif
+
+ifndef JARDIR
+  JARDIR = $(ABSCLASSDIR)
+endif
+
+ifndef JAVADOCDIR
+  JAVADOCDIR = $(ABSCLASSDIR)/aud/JavaDoc
+endif
+
+ifndef DOXYGENDIR
+  DOXYGENDIR = $(ABSCLASSDIR)/aud/Doxygen
+endif
+
+# default rules
+.SUFFIXES: .java .class .jar
+.PHONY:    clean
+
+.java.class:
+	CLASSPATH=$$CLASSPATH:$(ABSCLASSPATH) $(JC) $(JFLAGS) -d $(ABSCLASSDIR) $<
+
+SOURCES = $(wildcard [A-Z]*.java) # ignore package-info.java
+CLASSES = $(SOURCES:.java=.class)
+
+default: classes
+
+all:     classes jar doc doxy test
+
+classes: subdirs $(CLASSES)
+
+jar:	 $(JARDIR)/aud.jar
+
+$(JARDIR)/aud.jar: classes # ignore tests?
+	cd .. && \
+	find aud -name '*.class' -print > classes.list && \
+	jar cf $(JARDIR)/aud.jar @classes.list
+	-cd .. && rm classes.list
+
+test:	classes
+	find $(ABSMAKEROOT)/test -name '*Test.class' -print | \
+	sed s!\.*test/!aud.test.!g | sed s!.class!!g | \
+	CLASSPATH=$$CLASSPATH:$(ABSCLASSPATH)  xargs -n 1 \
+	$(JVM) $(JVMFLAGS) org.junit.runner.JUnitCore
+
+doc:
+	CLASSPATH=$$CLASSPATH:$(ABSCLASSPATH) \
+	$(JAVADOC) -d $(JAVADOCDIR) $(JAVADOCFLAGS) $(PACKAGES)
+
+viewdoc:  doc
+	$(BROWSER) $(BROWSERFLAGS) $(JAVADOCDIR)/index.html
+
+doxy:
+	sed s!@DOXYGENDIR@!$(DOXYGENDIR)!g < $(ABSMAKEROOT)/doxyfile | \
+	sed s!@INPUTDIR@!$(ABSMAKEROOT)!g > $(ABSMAKEROOT)/doxyfile.tmp
+	$(DOXYGEN) $(ABSMAKEROOT)/doxyfile.tmp
+	-rm $(ABSMAKEROOT)/doxyfile.tmp
+
+latex:	doxy
+	cd $(DOXYGENDIR)/latex && $(MAKE)
+
+viewdoxy: doxy
+	$(BROWSER) $(BROWSERFLAGS) $(DOXYGENDIR)/html/index.html
+
+subdirs:
+	@for dir in $(SUBDIRS); do \
+            $(MAKE) ABSMAKEROOT=$(ABSMAKEROOT) CONFIGFILE=$(CONFIGFILE)\
+	    ABSCLASSDIR=$(ABSCLASSDIR) ABSCLASSPATH=$(ABSCLASSPATH) -C $$dir; \
+        done
+
+pmakeroot:
+	@echo $(ABSMAKEROOT)
+
+pclassdir:
+	@echo $(ABSCLASSDIR)
+
+pclasspath:
+	@echo $(ABSCLASSPATH)
+
+ppaths:	pmakeroot pclassdir pclasspath
+
+clean:
+	-rm -f *.class
+	@for dir in $(SUBDIRS); do \
+            $(MAKE) ABSMAKEROOT=$(ABSMAKEROOT) \
+	    ABSCLASSDIR=$(ABSCLASSDIR) ABSCLASSPATH=$(ABSCLASSPATH) -C $$dir clean; \
+        done
+	-rm -rf $(JAVADOCDIR)
+	-rm -rf $(DOXYGENDIR)
+
+clobber: clean
+	-rm $(JARDIR)/aud.jar
