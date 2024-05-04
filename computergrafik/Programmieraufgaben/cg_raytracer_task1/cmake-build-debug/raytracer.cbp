@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="raytracer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\glfw-src\;CMake Files\cmake-build-debug\_deps\glfw-src\src\;CMake Files\src\;CMake Files\src\acceleration\;CMake Files\src\camera\;CMake Files\src\geometry\;CMake Files\src\geometry\primitives\;CMake Files\src\geometry\mesh\;CMake Files\src\interface\;CMake Files\src\light\;CMake Files\src\material\;CMake Files\src\material\color\;CMake Files\src\utility\;CMake Files\executables\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cgraytracer">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/libcgraytracer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 cgraytracer"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cgraytracer/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/libcgraytracer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 cgraytracer/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testscene">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/testscene.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 testscene"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testscene/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/testscene.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 testscene/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task0">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task0"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task0/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task0/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task1"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task1/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task2"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task2/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task3"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task3/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_2">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task3_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task3_2"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_2/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task3_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task3_2/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task4"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task4/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task5"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/task5.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 task5/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check3">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/check3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 check3"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check3/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/check3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCG_USE_PREVIEW_WINDOW=1"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 check3/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/executables/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix_test">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/matrix_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 matrix_test"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix_test/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/matrix_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 matrix_test/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1_test">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task1_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task1_test"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1_test/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task1_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task1_test/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2_test">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task2_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task2_test"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2_test/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task2_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task2_test/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_test">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task3_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/../executables"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task3_test"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_test/fast">
+				<Option output="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/task3_test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/../executables"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility"/>
+					<Add directory="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 task3_test/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-build/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/wgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/check3.cpp">
+			<Option target="check3"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/glwindow.cpp">
+			<Option target="main"/>
+			<Option target="testscene"/>
+			<Option target="task0"/>
+			<Option target="task1"/>
+			<Option target="task2"/>
+			<Option target="task3"/>
+			<Option target="task3_2"/>
+			<Option target="task4"/>
+			<Option target="task5"/>
+			<Option target="check3"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/glwindow.h">
+			<Option target="main"/>
+			<Option target="testscene"/>
+			<Option target="task0"/>
+			<Option target="task1"/>
+			<Option target="task2"/>
+			<Option target="task3"/>
+			<Option target="task3_2"/>
+			<Option target="task4"/>
+			<Option target="task5"/>
+			<Option target="check3"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task0.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task1.cpp">
+			<Option target="task1"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task2.cpp">
+			<Option target="task2"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task3.cpp">
+			<Option target="task3"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task3_2.cpp">
+			<Option target="task3_2"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task4.cpp">
+			<Option target="task4"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/task5.cpp">
+			<Option target="task5"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/testscene.cpp">
+			<Option target="testscene"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration/aabb.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration/aabb.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration/octree.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration/octree.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera/orthographiccamera.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera/orthographiccamera.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera/perspectivecamera.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera/perspectivecamera.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bezier_patch_mesh.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bezier_patch_mesh.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bezier_wave.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bezier_wave.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bunny.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/bunny.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/dragon.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/dragon.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/mesh.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/mesh.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/teapot.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/teapot.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/teapot_part.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/teapot_part.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/trumpet.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/trumpet.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/box.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/box.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/plane.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/plane.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/quadric.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/quadric.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/sphere.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/sphere.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/triangle.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/triangle.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface/movable.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface/movable.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/directionallight.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/directionallight.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/pointlight.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/pointlight.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/spotlight.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/spotlight.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color/checkerboard.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color/checkerboard.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color/texture.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color/texture.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/constantcolormaterial.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/constantcolormaterial.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/phong.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/phong.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/ray.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/ray.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/raytracer.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/raytracer.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/scene.cpp">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/scene.h">
+			<Option target="cgraytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/matrix_test.cpp">
+			<Option target="matrix_test"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/task1_test.cpp">
+			<Option target="task1_test"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/task2_test.cpp">
+			<Option target="task2_test"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/task3_test.cpp">
+			<Option target="task3_test"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glfw-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glfw-src\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glfw-src\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glfw-src\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake-build-debug/_deps/glfw-src/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glfw-src\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/acceleration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\acceleration\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/camera/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\camera\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\geometry\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/primitives/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\geometry\primitives\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/geometry/mesh/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\geometry\mesh\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/interface/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\interface\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/light/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\light\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\material\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/material/color/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\material\color\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/src/utility/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\utility\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/executables/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\executables\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake/Modules/add_glfw.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake/Modules/create_raytracer_executable.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/cmake/Modules/preview_window.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task1/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
