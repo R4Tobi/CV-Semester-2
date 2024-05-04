@@ -6,5 +6,7 @@
 *.pdf
 *.txt
 *.iml
+
 */.idea
 */out
+*/packages
