@@ -1,4 +1,0 @@
-C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_introcpp/cmake-build-debug/CMakeFiles/cpp_intro_full.dir
-C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_introcpp/cmake-build-debug/CMakeFiles/cpp_intro.dir
-C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_introcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_introcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
