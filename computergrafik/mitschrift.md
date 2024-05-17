@@ -1,6 +1,6 @@
 # Computergrafik
 
-## Vorlesung 1
+## Vorlesung 1 / Einführung
 
 - [E-Learning](https://elearning.ovgu.de/enrol/index.php?id=16588)
 - Einschreibeschlüssel: **raytracer**
@@ -13,6 +13,10 @@
 - Programmieraufgaben alle 2-3 Wochen
 - Übung jede Woche
 - **Übung 1 für Grundlagen sehr wichtig!!!**
+
+- mögliche Punkte.....49
+- erreichte Punkte....35
+- in Prozent..........71%
 
 ### Einführung
 
@@ -76,7 +80,7 @@
   - lineares Gleichunggsystem mit 4 unbekannten
   - i.a. eindeutige Lösung
 
-## Vorlesung 2
+## Vorlesung 2 / Einführung + Modellierung
 
 ### Raytracing
 
@@ -86,7 +90,7 @@
 - Sichtbarkeit: Vergleichen von Beträgen der "Strahlen" erstes objekt ist sichtbar
 - Schattierung: Kugel, die beleuchtet wird, ist nicht überall gleich hell -> Beleuchtungsberechnung
 
-### Geometrische Modellerung
+### Geometrische Modellierung
 
 #### Modelle
 
@@ -131,3 +135,24 @@
 - Fall 3: Teile sind schwarz, andere sind weiß
 - "Wurzel" -> rekursive Unterteilung -> "weiß, schwarz, oder grau" -> rekursive Unterteilung
 - Teile und herrsche prinzip
+
+## Kurven und Flächenmodellierung
+
+### Beispiele
+
+- Autokarosserienetwurf, Flugzeug- und Schiffbau, Simulation von Bewegungsabläufe, Animation, Filmindustrie, Computerkunst
+
+### Freiformkurven / Freiformflächen
+
+- parametrische Kurven/Flächen mit intuitiven Kontrollpunkten
+- algebraische Definition:
+  - Durch Definition non n-1 Basisfunktion $f_i (t), i = 0, ..., n$
+  - dann wird durch die Kontrollpunkte $p_i$ die Kurve definiert als
+  - $x(t) = ∑_{i=0}^{n} p_i f_i (t)$
+- geometrische Definition:
+  - Beschreibung einer geometrischen Konstruktion, wie aus den Kontrollpunkten $p_i$ und dem Parameterwert t der entsprechende Kurvenpunkt konstruiert werden kann
+
+### Der de-Casteljau-Algorithmus
+
+- Geometrisches Verfahren zur Konstruktion von Freiformkurven
+- Basiert auf wiederholter linearer Interpolation
