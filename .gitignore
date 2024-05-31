@@ -6,6 +6,7 @@
 *.pdf
 *.txt
 *.iml
+*.class
 
 */.idea
 */out

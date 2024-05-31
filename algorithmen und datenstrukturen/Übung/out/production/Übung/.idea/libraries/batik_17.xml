@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="batik-17">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/packages/batik-1.17" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/packages/batik-1.17/samples/tests/resources/java/sources" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/packages/batik-1.17" recursive="false" />
+  </library>
+</component>
