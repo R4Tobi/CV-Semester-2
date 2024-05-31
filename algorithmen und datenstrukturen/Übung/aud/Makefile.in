@@ -22,7 +22,9 @@ IN_MAKEROOT = $(if $(wildcard Makefile.in),true,)
 AUDCLASSDIR  = ..  # root of output directory
 AUDCLASSPATH = ..  # classpath
 
-PACKAGES = aud aud.adt aud.util aud.example aud.example.expr aud.test
+PACKAGES = aud aud.adt aud.graph aud.graph.matrix aud.util \
+           aud.example aud.example.expr aud.example.hash \
+           aud.test
 
 #PACKAGES = aud aud.adt aud.graph aud.graph.matrix aud.util \
 #	   aud.example aud.example.expr aud.example.hash aud.example.graph \
