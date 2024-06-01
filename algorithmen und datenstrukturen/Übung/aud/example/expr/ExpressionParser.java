@@ -48,8 +48,16 @@ import aud.util.Sys;
     #lookahead}): it is advanced (by {@link #nextToken} only if this
     token is "consumed" by part of a BNF rule.</li>
 
-    <li><strong>The current implementation has a problem!
-    Do you see what and why?</strong>
+    <li>The given grammar defines expressions <b>right-associative</b>, which
+    is not quite correct: {@code a+b+c} should equal {@code (a+b)+c} (left
+    associative) rather than {@code a+(b+c)}!<br>
+    A simple change of the grammar however leads to an infinite recursion (due
+    to <a href="http://en.wikipedia.org/wiki/Left_recursion"><em>left
+    recursion</em></a> in the new grammar.<br>
+    This can be fixed easily by a transformation of the grammar. Also, the
+    practical implementation is easy (use an iteration). However, both is
+    boyond the scope of the lecture at this point. For a correct
+    implementation see {@link ExpressionParser2}
     </li>
 
     </ul>
