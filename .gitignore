@@ -8,7 +8,7 @@
 *.iml
 *.class
 
-*/out
-
-*/cg_introcpp
-*/cg_raytracer_task*
+ */out/*
+ */out
+ /out/*
+ *out/*
