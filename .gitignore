@@ -8,10 +8,7 @@
 *.iml
 *.class
 
-*/.idea
 */out
-*/packages
 
 */cg_introcpp
 */cg_raytracer_task*
-*/Programmieraufgaben
