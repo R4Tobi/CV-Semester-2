@@ -100,12 +100,11 @@ $\text{Resultierende Klauseln:} \quad (\neg A), (\neg B), (B \lor A)$
 
 $\text{Resultierende Klauseln:} \quad \neg A, \neg B, \text{widersprüchlich}$
 
-
 **Schlussfolgerung für Satz b:**
 
 - Unlösbar. Es gibt keine Zuweisung, die alle Klauseln gleichzeitig wahr macht.
 
-## 8.2
+## 8.3
 
 a)
 
@@ -185,6 +184,7 @@ $\text{Sc} = (\neg A \lor \neg B \lor \neg D) \land \neg E \land (\neg C \lor A)
   - \(\neg A \lor D\) (ein positives Literal: \(D\))
 
 **Konditionale Form:**
+
 - \(\neg A \land \neg B \implies \neg D\)
 - \(\neg E\)
 - \(\neg C \implies A\)
@@ -192,6 +192,7 @@ $\text{Sc} = (\neg A \lor \neg B \lor \neg D) \land \neg E \land (\neg C \lor A)
 - \(\neg A \implies D\)
 
 **Erfüllbarkeitsprüfung:**
+
 1. Initiale Variablenbelegung: \( \{\} \)
 2. \(\neg E\) muss wahr sein.
 3. \(\neg C\) muss wahr sein.
@@ -200,6 +201,7 @@ $\text{Sc} = (\neg A \lor \neg B \lor \neg D) \land \neg E \land (\neg C \lor A)
 6. \(\neg A \land \neg B \implies \neg D\) ist erfüllt, da \(A\) wahr ist.
 
 Erfüllbare Belegung:
+
 - \(E = \text{falsch}, C = \text{falsch}, A = \text{wahr}, D = \text{wahr}\)
 
 **Erfüllbar:** Ja
@@ -207,7 +209,6 @@ Erfüllbare Belegung:
 d)
 
 $\text{Sd} = (\neg E \lor \neg B \lor \neg D) \land (\neg E \lor D) \land B \land \neg A \land (\neg C \lor E) \land C$
-
 
 - **Hornformel:** Ja, da jede Klausel höchstens ein positives Literal enthält:
   - \(\neg E \lor \neg B \lor \neg D\) (kein positives Literal)
