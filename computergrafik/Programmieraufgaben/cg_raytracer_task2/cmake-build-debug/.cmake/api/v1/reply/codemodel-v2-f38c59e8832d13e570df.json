@@ -1,0 +1,234 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "executables",
+					"jsonFile" : "directory-executables-Debug-889c5d3c72bc8aecb93e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "executables",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						7,
+						9,
+						10,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-f18be1977b403cfd1a50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						3,
+						6,
+						8,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "raytracer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "cgraytracer::@145eef247bfb46b6828c",
+					"jsonFile" : "target-cgraytracer-Debug-992d7d2ddfedfd80359c.json",
+					"name" : "cgraytracer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "check3::@ae4c228f25544f415da9",
+					"jsonFile" : "target-check3-Debug-4af8e9bde9a19936f6c7.json",
+					"name" : "check3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "main::@ae4c228f25544f415da9",
+					"jsonFile" : "target-main-Debug-5c720bff74d43628cae8.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "matrix_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-matrix_test-Debug-37c9880a9e06448bf240.json",
+					"name" : "matrix_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task0::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task0-Debug-8e73ef6d10b97dd98c97.json",
+					"name" : "task0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task1::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task1-Debug-147dce67c9367ef7994d.json",
+					"name" : "task1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "task1_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-task1_test-Debug-f9fbdda97167c686c881.json",
+					"name" : "task1_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task2::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task2-Debug-c15a5f83db7cf889761e.json",
+					"name" : "task2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "task2_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-task2_test-Debug-a6b2d651f6001a8953b3.json",
+					"name" : "task2_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task3::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task3-Debug-f186be40bcaa840dd4f2.json",
+					"name" : "task3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task3_2::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task3_2-Debug-92fae3926c709ec8dd59.json",
+					"name" : "task3_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "task3_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-task3_test-Debug-4149a4f18021bf5ad80a.json",
+					"name" : "task3_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task4::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task4-Debug-39c51fd2f8cf88012cd8.json",
+					"name" : "task4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "task5::@ae4c228f25544f415da9",
+					"jsonFile" : "target-task5-Debug-ce54e346eea404235a4d.json",
+					"name" : "task5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "testscene::@ae4c228f25544f415da9",
+					"jsonFile" : "target-testscene-Debug-25ee255fd60e01894bb9.json",
+					"name" : "testscene",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task2/cmake-build-debug",
+		"source" : "C:/Users/tobia/Documents/GitHub/CV-Semester-2/computergrafik/Programmieraufgaben/cg_raytracer_task2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

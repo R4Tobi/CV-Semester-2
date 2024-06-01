@@ -8,7 +8,7 @@ import aud.util.Graphvizable;
  */
 public class BTree<Key extends Comparable<Key>> implements Graphvizable {
 
-  KTreeNode<Key> root_;
+  protected KTreeNode<Key> root_;
   int            m_;
 
   /** create an empty tree of order 2*m+1 */
@@ -136,4 +136,5 @@ public class BTree<Key extends Comparable<Key>> implements Graphvizable {
 
     aud.util.DotViewer.displayWindow(tree,"B-tree");
   }
+
 }
