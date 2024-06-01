@@ -13,6 +13,7 @@ Für einen B-Baum der Ordnung `t` und der Höhe `h`, errechnet sich die maximale
 Maximale Anzahl = `Σ((2t-1) * t^i) für i = 0 bis h-1`
 
 ## Anwendung auf unseren Fall
+
 `t = 2`, `h = 3`
 
 $$ n_{min} = 1 + (2 - 1) * \sum\nolimits_{i=1}^{3-1}(t^i) = 1 + 6 = 7 $$
