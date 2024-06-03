@@ -3,6 +3,7 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.synctex(busy)
 *.pdf
 *.txt
 *.iml

@@ -17,34 +17,208 @@
 
 \paragraph{a)}
 
-$$ u \cdot \pmatrix{a \cr b \cr c} + v \cdot  \pmatrix{x \cr y \cr z} + w \cdot \pmatrix{r \cr s \cr t} = \pmatrix{3 \cr 4 \cr 5}$$
+$$ u \cdot \begin{pmatrix} a \\ b \\ c \end{pmatrix} + v \cdot \begin{pmatrix} x \\ y \\ z \end{pmatrix} + w \cdot \begin{pmatrix} r \\ s \\ t \end{pmatrix} = \begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix} $$
 
-Die Koeffizienten kann man auch als Vektoren darstellen
-Die 3 Vektoren können als 3x3 Matrix dargestellt werden
+Die Koeffizienten kann man auch als Vektoren darstellen. Die 3 Vektoren können als 3x3-Matrix dargestellt werden:
 
-$$\pmatrix{u \cr v \cr w} \cdot \pmatrix{a & x & r \cr b & y & s \cr c & z & t} = \pmatrix{3 \cr 4 \cr 5}$$
+$$ \begin{pmatrix} u \\ v \\ w \end{pmatrix} \cdot \begin{pmatrix} a & x & r \\ b & y & s \\ c & z & t \end{pmatrix} = \begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix} $$
 
 \paragraph{b)}
 
 \subparagraph{(1)}
 
-$$\pmatrix{-1 & 3 & -4 \cr 2 & 1 & 2 \cr -3 & 5 & 1} \cdot \pmatrix{2 \cr 0 \cr -1} = \pmatrix{-1 \cdot 2 & + & 3 \cdot 0 & + & (-4) \cdot (-1) \cr 2 \cdot 2 & + & 1 \cdot 0 & + & 2 \cdot (-1) \cr -3 \cdot 2 & + & 5 \cdot 0 & + & 1 \cdot (-1)} = \pmatrix{2 \cr 2 \cr -7}$$
+$$ \begin{pmatrix} -1 & 3 & -4 \\ 2 & 1 & 2 \\ -3 & 5 & 1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 0 \\ -1 \end{pmatrix} = \begin{pmatrix} -1 \cdot 2 + 3 \cdot 0 + (-4) \cdot (-1) \\ 2 \cdot 2 + 1 \cdot 0 + 2 \cdot (-1) \\ -3 \cdot 2 + 5 \cdot 0 + 1 \cdot (-1) \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \\ -7 \end{pmatrix} $$
 
 \subparagraph{(2)}
 
-$$\pmatrix{2 & -3 & -4 \cr 1 & 1 & -5 \cr -1 & 0 & 2} \cdot \pmatrix{3 \cr -2 \cr 0} = \pmatrix{2 \cdot 3 & + & (-3) \cdot (-2) & + & (-4) \cdot 0 \cr 1 \cdot 3 & + & 1 \cdot (-2) & + & (-5) \cdot 0 \cr -1 \cdot 3 & + & 0 \cdot (-2) & + & 2 \cdot 0} = \pmatrix{12 \cr 1 \cr -3}$$
+$$ \begin{pmatrix} 2 & -3 & -4 \\ 1 & 1 & -5 \\ -1 & 0 & 2 \end{pmatrix} \cdot \begin{pmatrix} 3 \\ -2 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \cdot 3 + (-3) \cdot (-2) + (-4) \cdot 0 \\ 1 \cdot 3 + 1 \cdot (-2) + (-5) \cdot 0 \\ -1 \cdot 3 + 0 \cdot (-2) + 2 \cdot 0 \end{pmatrix} = \begin{pmatrix} 12 \\ 1 \\ -3 \end{pmatrix} $$
 
 \section{Matrix-Matrix Multiplikation}
 
 \paragraph{a)}
 
-Wie bei 7.1 könne wir die Koeffizienten umstellen. Hier als Matirx. Das selbe mit den Ergebnisvektoren. Die Vektoren gruppieren wir zu einer 3x3 Matrix.
+Wie bei 7.1 können wir die Koeffizienten umstellen. Hier als Matrix. Dasselbe mit den Ergebnisvektoren. Die Vektoren gruppieren wir zu einer 3x3-Matrix.
 
-$$\pmatrix{u & v & w \cr l & m & n} \cdot \pmatrix{x & a & r \cr y & b & s \cr z & c & t} = \pmatrix{3 & 3 & 5 \cr 1 & 4 & 2}$$
+$$ \begin{pmatrix} u & v & w \\ l & m & n \end{pmatrix} \cdot \begin{pmatrix} x & a & r \\ y & b & s \\ z & c & t \end{pmatrix} = \begin{pmatrix} 3 & 3 & 5 \\ 1 & 4 & 2 \end{pmatrix} $$
 
-\paragraph{b)}
+\paragraph{b) (Zeile $\cdot$ Spalte)}
 
-$$
+\begin{align*}
+    & \begin{pmatrix} -1 & 3 & -4 \\ 2 & 1 & 2 \\ -3 & 5 & 1 \end{pmatrix} \cdot \begin{pmatrix} 2 & -3 & -4 \\ 1 & 1 & -5 \\ -1 & 0 & 2 \end{pmatrix}\\
+    & = \begin{pmatrix} 
+    -1 \cdot 2 + 3 \cdot 1 + (-4) \cdot (-1) & -1 \cdot (-3) + 3 \cdot 1 + (-4) \cdot 0 & -1 \cdot (-4) + 3 \cdot (-5) + (-4) \cdot 2 \\ 
+    2 \cdot 2 + 1 \cdot 1 + 2 \cdot (-1) & 2 \cdot (-3) + 1 \cdot 1 + 2 \cdot 0 & 2 \cdot (-4) + 1 \cdot (-5) + 2 \cdot 2 \\ 
+    -3 \cdot 2 + 5 \cdot 1 + 1 \cdot (-1) & -3 \cdot (-3) + 5 \cdot 1 + 1 \cdot 0 & -3 \cdot (-4) + 5 \cdot (-5) + 1 \cdot 2 
+    \end{pmatrix}\\
+    & = \begin{pmatrix} 
+    5 & 6 & -19 \\ 
+    3 & -5 & -9 \\ 
+    -2 & 14 & -11 
+    \end{pmatrix}
+\end{align*}
+
+\section{Rotationsmatrix}
+
+\subsection{a) Eigenschaften einer Rotationsmatrix}
+
+\begin{itemize}
+    \item Orthogonalität: Eine Rotationsmatrix R ist orthogonal, d.h. $ R^T R = RR^T = I$, wobei $R^T$ die transponierte von $R$ und $I$ die Einheitsmatrix ist
+    \item Determinante: Die Determinante einer Rotationsmatrix ist immer gleich 1, d.h., $det(R) = 1$
+    \item Erhaltung der Länge: Eine Rotationsmatrix verändert nicht die Länge eines Vektors, d.h., wenn $v$ ein Vektor ist, dann bleibt $||Rv|| = ||v||$
+\end{itemize}
+
+\subsection{b) Ergänzen Sie die fehlenden Einträge}
+
+    $$
+    \begin{pmatrix}
+    \frac{\sqrt{2}}{2} & 0 & ? \\
+    0 & ? & ? \\
+    ? & ? & ?
+    \end{pmatrix} 
+    $$
+    Angenommen, wir betrachten eine Rotationsmatrix um die z-Achse, so hat sie die Form:
+    $$ 
+    R_z(\theta) = \begin{pmatrix}
+    \cos(\theta) & -\sin(\theta) & 0 \\
+    \sin(\theta) & \cos(\theta) & 0 \\
+    0 & 0 & 1
+    \end{pmatrix} 
+    $$
+    Angenommen, \(\theta = 45^\circ\) (oder \(\frac{\pi}{4}\) im Bogenmaß), dann ist \(\cos(\theta) = \sin(\theta) = \frac{\sqrt{2}}{2}\). Also sieht die Matrix \( R_z \) so aus:
+    $$
+    R_z\left(\frac{\pi}{4}\right) = \begin{pmatrix}
+    \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & 0 \\
+    \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 0 \\
+    0 & 0 & 1
+    \end{pmatrix}
+    $$
+    Nun ergänzen wir die Matrix \( A \) entsprechend:
+    $$
+    A = \begin{pmatrix}
+    \frac{\sqrt{2}}{2} & 0 & 0 \\
+    0 & \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+    0 & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+    \end{pmatrix}
+    $$
+    Da diese Form jedoch nicht die Normale für Rotation um eine Achse ist, kann es besser sein, zu überprüfen, welche Form gegeben wird. In diesem Fall ist die 0 in der letzten Zeile besonders.
+    $$
+    A = \begin{pmatrix}
+    \frac{\sqrt{2}}{2} & 0 & 0 \\
+    0 & \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+    0 & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+    \end{pmatrix}
+    $$
+    In dieser Form bleibt nur die \( A_{22} \) und \( A_{23} \). Somit wäre:
+    $$
+    A = \begin{pmatrix}
+    \frac{\sqrt{2}}{2} & 0 & 0 \\
+    0 & \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+    0 & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+    \end{pmatrix}
+    $$
+
+\subsection{c)}
+
+Um zu zeigen, dass zwei aufeinanderfolgende 2D-Rotationen additiv sind, müssen wir beweisen, das die Multiplikation von zwei Rotationsmatrizen \(\mathbf{R}(\theta_1)\) und \(\mathbf{R}(\theta_2)\) gleich der Rotationsmatrix \(\mathbf{R}(\theta_1 + \theta_2)\) ist.
+\\\\
+Eine 2D-Rotationsmatrix \(\mathbf{R}(\theta)\) für einen Winkel \(\theta\) hat die Form:
+\\\\
+$
+\mathbf{R}(\theta) = \begin{pmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{pmatrix}
+$
+\\\\
+Nun betrachten wir die Multiplikation von zwei solchen Matrizen:
+\\
+$
+\mathbf{R}(\theta_1) \mathbf{R}(\theta_2) = \begin{pmatrix}
+\cos(\theta_1) & -\sin(\theta_1) \\
+\sin(\theta_1) & \cos(\theta_1)
+\end{pmatrix}
+\begin{pmatrix}
+\cos(\theta_2) & -\sin(\theta_2) \\
+\sin(\theta_2) & \cos(\theta_2)
+\end{pmatrix}
+$
+\\\\
+Durchführen der Multiplikation, unter Bestimmung der Einträge in der Matrix
+\\\\
+$
+\mathbf{R}(\theta_1) \mathbf{R}(\theta_2) = \begin{pmatrix}
+\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) & -\cos(\theta_1)\sin(\theta_2) - \sin(\theta_1)\cos(\theta_2) \\
+\sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2) & -\sin(\theta_1)\sin(\theta_2) + \cos(\theta_1)\cos(\theta_2)
+\end{pmatrix}
+$
+\\\\
+Anwendung der Additiontheoreme für Cosinus und Sinus:
+\\\\
+$
+\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)
+$
+\\
+$
+\sin(\theta_1 + \theta_2) = \sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)
+$
+\\
+$
+-\sin(\theta_1 + \theta_2) = -(\sin(\theta_1)\cos(\theta_2) + \cos(\theta_1)\sin(\theta_2)) = -\sin(\theta_1)\cos(\theta_2) - \cos(\theta_1)\sin(\theta_2)
+$
+\\
+$
+-\sin(\theta_1)\sin(\theta_2) + \cos(\theta_1)\cos(\theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) = \cos(\theta_1 + \theta_2)
+$
+\\\\
+Damiterhält man folgendes:
+\\\\
+$
+\mathbf{R}(\theta_1) \mathbf{R}(\theta_2) = \begin{pmatrix}
+\cos(\theta_1 + \theta_2) & -\sin(\theta_1 + \theta_2) \\
+\sin(\theta_1 + \theta_2) & \cos(\theta_1 + \theta_2)
+\end{pmatrix} = \mathbf{R}(\theta_1 + \theta_2)
+$
+\\\\
+Das zeigt, dass zwei aufeinanderfolgende 2D-Rotationen additiv sind, also \(\mathbf{R}(\theta_1) \mathbf{R}(\theta_2) = \mathbf{R}(\theta_1 + \theta_2)\).
+\\\\
+\section{Ratios}
+
+\subsection*{a) Bestimmen Sie das Teilverhältnis \( r = \text{ratio}(p_1, p_2, p_3) \) für die folgenden Punkte:}
+
+1. Für die Anordnung \( p_1, p_2, p_3 \):
+
+\[ r = \frac{p_1 - p_2}{p_3 - p_2} = \frac{0 - 1}{2 - 1} = \frac{-1}{1} = -1 \]
+
+2. Für die Anordnung \( p_2, p_3, p_1 \):
+
+\[ r = \frac{p_2 - p_3}{p_1 - p_3} = \frac{1 - 2}{0 - 2} = \frac{-1}{-2} = \frac{1}{2} \]
+
+3. Für die Anordnung \( p_3, p_1, p_2 \):
+
+\[ r = \frac{p_3 - p_1}{p_2 - p_1} = \frac{2 - 0}{1 - 0} = \frac{2}{1} = 2 \]
+
+4. Für die Anordnung \( p_3, p_2, p_1 \):
+
+\[ r = \frac{p_3 - p_2}{p_1 - p_2} = \frac{2 - 1}{0 - 1} = \frac{1}{-1} = -1 \]
+
+\subsection*{b) Bestimmen Sie das Doppelverhältnis \( cr = \text{crossratio}(p_1, p_2, p_3, p_4) \) für die folgenden Punkte:}
+
+1. Für die Anordnung \( p_1, p_2, p_3, p_4 \):
+
+\[ cr = \frac{(p_1 - p_3)(p_2 - p_4)}{(p_1 - p_4)(p_2 - p_3)} = \frac{(0 - 2)(1 - 3)}{(0 - 3)(1 - 2)} = \frac{(-2)(-2)}{(-3)(-1)} = \frac{4}{3} \]
+
+2. Für die Anordnung \( p_1, p_3, p_4, p_2 \):
+
+\[ cr = \frac{(p_1 - p_4)(p_3 - p_2)}{(p_1 - p_2)(p_3 - p_4)} = \frac{(0 - 3)(2 - 1)}{(0 - 1)(2 - 3)} = \frac{(-3)(1)}{(-1)(-1)} = \frac{-3}{1} = -3 \]
+
+3. Für die Anordnung \( p_4, p_1, p_2, p_3 \):
+
+\[ cr = \frac{(p_4 - p_2)(p_1 - p_3)}{(p_4 - p_3)(p_1 - p_2)} = \frac{(3 - 1)(0 - 2)}{(3 - 2)(0 - 1)} = \frac{(2)(-2)}{(1)(-1)} = \frac{-4}{-1} = 4 \]
+
+4. Für die Anordnung \( p_1, p_4, p_3, p_2 \):
+
+\[ cr = \frac{(p_1 - p_3)(p_4 - p_2)}{(p_1 - p_2)(p_4 - p_3)} = \frac{(0 - 2)(3 - 1)}{(0 - 1)(3 - 2)} = \frac{(-2)(2)}{(-1)(1)} = \frac{-4}{-1} = 4 \]
 
 \end{document}
-
+    
+\end{document}
