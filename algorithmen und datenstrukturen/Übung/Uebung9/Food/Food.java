@@ -1,5 +1,7 @@
 package Uebung9.Food;
 
+import java.util.Objects;
+
 /**
  * The Food class represents a food item with a category and a name.
  */
@@ -58,6 +60,6 @@ public class Food {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Food food = (Food) obj;
-        return (category != null ? category.equals(food.category) : food.category == null) && (name != null ? name.equals(food.name) : food.name == null);
+        return (Objects.equals(category, food.category)) && (Objects.equals(name, food.name));
     }
 }

@@ -102,7 +102,7 @@ public class HashLinQuad {
         Random rand = new Random();
         int collisionsLin = 0;
         for (int i = 0; i < 1000; i++) {
-            int value = rand.nextInt(2_000_000_000);
+            int value = rand.nextInt(1000);
             collisionsLin += hashTableLin.addLin(value);
         }
 
