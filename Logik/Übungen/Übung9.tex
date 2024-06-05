@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm, fullpage}
+
+\begin{document}
+
+\section*{Lösungen zu Übungsblatt 9 – Teil 1}
+
+\subsection*{Aufgabe 9.1}
+
+\begin{itemize}
+    \item In der dreiwertigen Logik gibt es insgesamt \( 3^2 = 9 \) mögliche Wahrheitswerte für jede binäre Operation, da jede Konjunktion drei mögliche Wahrheitswerte (wahr, falsch, unbestimmt) annehmen kann.
+    \item Eine Konjunktion ist normal, wenn der Wahrheitswert \textit{wahr} genau dann auftritt, wenn beide Operanden \textit{wahr} sind. Sie ist uniform, wenn sie symmetrisch bezüglich ihrer Argumente ist.
+    \item Um die Anzahl der möglichen normalen und uniformen Konjunktionen zu bestimmen, müssen wir alle möglichen Kombinationen durchgehen und die Bedingungen überprüfen.
+\end{itemize}
+
+\subsection*{Aufgabe 9.2}
+
+\subsubsection*{a)}
+
+\begin{itemize}
+    \item In der Priest-Logik (auch bekannt als parakonsistente Logik) kann eine Aussage sowohl wahr als auch falsch sein.
+    \item Daher kann \( \neg A \) wahr sein, selbst wenn \( A \) wahr ist. Dies bedeutet, dass \( \neg A \) und \( A \lor B \) wahr sein können, ohne dass \( B \) notwendigerweise wahr ist.
+    \item $\Rightarrow$ Also gilt die Folgerung nicht.
+\end{itemize}
+
+
+\subsubsection*{b)}
+
+In der Kleene-Logik sind die Wahrheitswerte wie folgt definiert:
+\begin{align*}
+\neg \text{wahr} &= \text{falsch} \\
+\neg \text{falsch} &= \text{wahr} \\
+\neg \text{unbestimmt} &= \text{unbestimmt}
+\end{align*}
+
+\begin{itemize}
+    \item Da \( A \lor B \) wahr ist und \( \neg A \) wahr ist, muss \( A \) falsch sein.
+    \item Wenn \( A \) falsch ist, muss \( B \) wahr sein, um \( A \lor B \) wahr zu machen.
+    \item $\Rightarrow$ Daher gilt die Folgerung in der Kleene-Logik.
+\end{itemize}
+
+\subsection*{Aufgabe 9.3}
+
+\subsubsection*{a)}
+Zeigen Sie, dass folgende Folgerung nicht in der Kleene-Logik gilt.
+\[
+\begin{array}{l}
+\neg (P \leftrightarrow Q) \\
+(P \leftrightarrow R) \lor (Q \leftrightarrow R) \\
+\hline
+R
+\end{array}
+\]
+\\
+In der Kleene-Logik (dreiwertige Logik) können die Wahrheitswerte wahr (1), falsch (0) und unbestimmt (u) sein. Wir prüfen die Folgerung durch eine Wahrheitstabelle.
+\\\\
+$
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        $P$ & $Q$ & $R$ & $P \leftrightarrow Q$ & $\neg (P \leftrightarrow Q)$ & $P \leftrightarrow R$ & $Q \leftrightarrow R$ & $(P \leftrightarrow R) \lor (Q \leftrightarrow R)$ & $R$ \\
+        \hline
+        0 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & 0 \\
+        0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\
+        0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 \\
+        0 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 \\
+        1 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \\
+        1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\
+        1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+        1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 1 \\
+        u & 0 & 0 & u & u & u & 1 & 1 & 0 \\
+        u & 0 & 1 & u & u & u & 0 & u & 1 \\
+        u & 1 & 0 & u & u & 0 & u & u & 0 \\
+        u & 1 & 1 & u & u & 1 & u & u & 1 \\
+        0 & u & 0 & u & u & 1 & u & u & 0 \\
+        0 & u & 1 & u & u & 0 & u & u & 1 \\
+        1 & u & 0 & u & u & u & u & u & 0 \\
+        1 & u & 1 & u & u & u & u & u & 1 \\
+        u & u & 0 & u & u & u & u & u & 0 \\
+        u & u & 1 & u & u & u & u & u & 1 \\
+        u & u & u & u & u & u & u & u & u \\
+        \hline
+    \end{tabular}
+$\\
+\\
+Es gibt Zeilen (z.B. \( P = 0, Q = 0, R = 1 \)), in denen die Prämissen wahr sind, aber die Konklusion \( R \) nicht notwendigerweise wahr ist. Daher gilt die Folgerung nicht in der Kleene-Logik.
+
+\subsubsection*{b)}
+Zeigen Sie, dass diese Folgerung in der Priest-Logik gilt.
+\[
+\begin{array}{l}
+\neg (P \leftrightarrow Q) \\
+(P \leftrightarrow R) \lor (Q \leftrightarrow R) \\
+\hline
+R
+\end{array}
+\]
+\\
+In der Priest-Logik (parakonsistente Logik) kann eine Aussage sowohl wahr als auch falsch sein. Wir müssen überprüfen, ob es keine Belegung gibt, bei der die Prämissen wahr sind und die Konklusion falsch ist.
+\\\\
+$
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $P$ & $Q$ & $R$ & $P \leftrightarrow Q$ & $\neg (P \leftrightarrow Q)$ & $P \leftrightarrow R$ & $Q \leftrightarrow R$ & $(P \leftrightarrow R) \lor (Q \leftrightarrow R)$ & $R$ \\
+    \hline
+    \text{W} & \text{W} & \text{W} & \text{W} & \text{F} & \text{W} & \text{W} & \text{W} & \text{W} \\
+    \text{W} & \text{W} & \text{F} & \text{W} & \text{F} & \text{F} & \text{F} & \text{F} & \text{F} \\
+    \text{W} & \text{F} & \text{W} & \text{F} & \text{W} & \text{W} & \text{F} & \text{W} & \text{W} \\
+    \text{W} & \text{F} & \text{F} & \text{F} & \text{W} & \text{F} & \text{W} & \text{W} & \text{F} \\
+    \text{F} & \text{W} & \text{W} & \text{F} & \text{W} & \text{W} & \text{F} & \text{W} & \text{W} \\
+    \text{F} & \text{W} & \text{F} & \text{F} & \text{W} & \text{F} & \text{W} & \text{W} & \text{F} \\
+    \text{F} & \text{F} & \text{W} & \text{W} & \text{F} & \text{W} & \text{W} & \text{W} & \text{W} \\
+    \text{F} & \text{F} & \text{F} & \text{W} & \text{F} & \text{F} & \text{F} & \text{F} & \text{F} \\
+    \hline
+    \end{tabular}
+$\\
+\\
+In der Priest-Logik gibt es keine Belegung, bei der die Prämissen wahr sind und die Konklusion falsch ist. Daher gilt die Folgerung in der Priest-Logik.
+
+\end{document}

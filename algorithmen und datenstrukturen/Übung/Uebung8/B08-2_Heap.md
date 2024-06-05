@@ -21,12 +21,12 @@
 **3\. Einfügen von `2`**
     - Heap: `[3,9,2]` (hinten anfügen)
     - Da 2 kleiner als 3 ist, wird 2 nach oben verschoben
-    - Heap: `[2,9,3]`
+    - Heap: `[2,3,9]`
 
 ```plaintext
     2
    / \
-  9   3
+  3   9
 ```
 
 **4\. Einfügen von `1`**
