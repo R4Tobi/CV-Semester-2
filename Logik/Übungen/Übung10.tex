@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm, fullpage}
+
+\begin{document}
+
+\section*{Lösungen zu Übungsblatt 10 – Teil 1}
+\subsection*{Umformulierte Sätze}
+
+a) \(\forall x (Cube(x) \rightarrow Small(x))\)
+   \begin{quote}
+   Jeder Würfel ist klein.
+   \end{quote}
+b) \(\exists a Cube(a)\)
+   \begin{quote}
+   Es gibt mindestens einen Würfel.
+   \end{quote}
+c) \(\exists v (Cube(v) \land Medium(v) \land Larger(v, c))\)
+   \begin{quote}
+   Es gibt einen Würfel, der mittelgroß ist und größer als \(c\) ist.
+   \end{quote}
+d) \(\exists u (Small(u) \land Cube(u))\)
+   \begin{quote}
+   Es gibt einen kleinen Würfel.
+   \end{quote}
+e) \(\neg \exists x (Larger(a, x) \land Larger(x, a))\)
+   \begin{quote}
+   Es gibt kein \(x\), das sowohl von \(a\) als auch größer ist als \(a\).
+   \end{quote}
+f) \(\forall w (SameRow(w, b) \rightarrow SameRow(b, w))\)
+   \begin{quote}
+   Wenn etwas in derselben Reihe wie \(b\) ist, dann ist \(b\) in derselben Reihe wie es.
+   \end{quote}
+g) \(\forall x \forall y \forall z (LeftOf(x, y) \land LeftOf(y, z) \rightarrow LeftOf(x, z))\)
+   \begin{quote}
+   Wenn \(x\) links von \(y\) und \(y\) links von \(z\) ist, dann ist \(x\) links von \(z\).
+   \end{quote}
+h) \(\forall x \forall y (Cube(x) \land Cube(y) \rightarrow LeftOf(x, y))\)
+   \begin{quote}
+   Wenn \(x\) und \(y\) Würfel sind, dann ist \(x\) links von \(y\).
+   \end{quote}
+i) \(\forall x (Cube(x) \rightarrow \exists x Between(x, x, y))\)
+   \begin{quote}
+   Wenn \(x\) ein Würfel ist, dann gibt es ein \(y\), so dass \(x\) zwischen \(x\) und \(y\) ist.
+   \end{quote}
+
+\subsection*{Erklärung für Ausdruck (i)}
+
+Der Ausdruck (i) lautet:
+\begin{equation*}
+\forall x (Cube(x) \rightarrow \exists x Between(x, x, y))
+\end{equation*}
+Diese Aussage bedeutet, dass für jeden Würfel \(x\) es ein \(y\) geben muss, so dass \(x\) zwischen \(x\) und \(y\) liegt.
+Allerdings ist dies problematisch, da der Ausdruck \(Between(x, x, y)\) impliziert, dass \(x\) sowohl links von \(x\) als auch rechts von \(x\) ist, was unmöglich ist, da ein Objekt nicht gleichzeitig links und rechts von sich selbst sein kann.
+Daher zeigt Bivalenz World für diesen Ausdruck ein falsches Ergebnis an, da die gegebene Bedingung logisch unmöglich ist.
+
+\section*{Lösung zu Aufgabe 10.2}
+
+\subsection*{a) Übersetzen der Sätze in allgemein verständliche deutsche Sätze}
+
+1. \(\forall x (Tet(x) \lor Cube(x))\)
+   \begin{quote}
+   Jedes Objekt ist entweder ein Tetraeder oder ein Würfel.
+   \end{quote}
+   
+2. \(\exists x (Small(x) \land x \neq b)\)
+   \begin{quote}
+   Es gibt ein kleines Objekt, das nicht \(b\) ist.
+   \end{quote}
+
+3. \(\exists x \exists y (Between(b, x, y) \lor Between(a, x, y))\)
+   \begin{quote}
+   Es gibt ein \(x\) und ein \(y\), so dass \(b\) zwischen \(x\) und \(y\) liegt oder \(a\) zwischen \(x\) und \(y\) liegt.
+   \end{quote}
+
+4. \(\forall x (fm(x) \neq x \rightarrow Tet(fm(x)))\)
+   \begin{quote}
+   Für jedes \(x\) gilt: Wenn \(fm(x) \neq x\), dann ist \(fm(x)\) ein Tetraeder.
+   \end{quote}
+
+5. \(\forall x (Cube(x) \rightarrow \exists y (Cube(y) \land (y = rm(x) \lor Adjoins(y, x))))\)
+   \begin{quote}
+   Für jeden Würfel \(x\) gibt es ein \(y\), das ebenfalls ein Würfel ist, und \(y\) ist entweder der rechte Nachbar von \(x\) oder grenzt an \(x\) an.
+   \end{quote}
+
+\subsection*{b) Bivalenz-World-Welt}
+
+Eine mögliche Welt, in der alle Sätze wahr sind, könnte folgende Eigenschaften haben:
+\begin{itemize}
+    \item Alle Objekte sind entweder Tetraeder oder Würfel.
+    \item Es gibt mindestens ein kleines Objekt, das nicht \(b\) ist.
+    \item Es gibt Objekte, die zwischen \(a\) und \(b\) liegen können.
+    \item Wenn \(fm(x)\) ungleich \(x\) ist, dann ist \(fm(x)\) ein Tetraeder.
+    \item Für jeden Würfel gibt es einen angrenzenden oder rechts liegenden Würfel.
+\end{itemize}
+
+\section*{Lösung zu Aufgabe 10.3}
+
+\subsection*{PL1-Sätze}
+
+1. \(\exists x (Large(x) \land Cube(x))\)
+   \begin{quote}
+   Etwas ist ein großer Würfel.
+   \end{quote}
+   
+2. \(\forall x (Cube(x) \rightarrow (\exists a (RightOf(x, a)) \land \exists b (LeftOf(x, b))))\)
+   \begin{quote}
+   Jeder Würfel liegt rechts von \(a\) und links von \(b\).
+   \end{quote}
+
+3. \(\exists x (Large(x) \land Cube(x) \land LeftOf(x, b) \land Behind(x, c))\)
+   \begin{quote}
+   Ein großer Würfel links von \(b\) liegt hinter \(c\).
+   \end{quote}
+
+4. \(\forall x ((Smaller(x, a) \rightarrow Cube(x)))\)
+   \begin{quote}
+   Alles, was kleiner ist als \(a\), ist ein Würfel.
+   \end{quote}
+
+5. \(\neg \forall x (Adjoins(a, x))\)
+   \begin{quote}
+   \(a\) ist nicht zu allem benachbart.
+   \end{quote}
+
+6. \(\neg \exists x (Adjoins(a, x))\)
+   \begin{quote}
+   \(a\) ist zu nichts benachbart.
+   \end{quote}
+
+7. \(\exists x (Dodec(x) \land \neg Large(x))\)
+   \begin{quote}
+   Manche Dodekaeder sind nicht groß.
+   \end{quote}
+
+8. \(\forall x ((Cube(x) \leftrightarrow \neg \exists y (SameColumn(x, y) \land (y = a \lor y = b))))\)
+   \begin{quote}
+   Etwas ist genau dann ein Würfel, wenn es nicht in derselben Spalte wie \(a\) oder \(b\) liegt.
+   \end{quote}
+
+\subsection*{Überprüfung in Bivalenz World}
+
+Ein Indiz für die Richtigkeit Ihrer Übersetzungen ist die Tatsache, dass in \textit{Bivalenz World}:
+\begin{itemize}
+    \item in der Welt a-05-05-w01.wld die Sätze 2, 4 und 8 falsch sein sollten und die übrigen wahr,
+    \item in der Welt a-05-05-w02.wld die Sätze 1, 3 und 7 falsch sein sollten und die übrigen wahr,
+    \item in der Welt a-05-05-w03.wld die Sätze 4 und 5 wahr sein sollten und die übrigen falsch.
+\end{itemize}
+
+\end{document}
