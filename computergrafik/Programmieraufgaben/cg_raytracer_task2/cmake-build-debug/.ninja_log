@@ -48,3 +48,7 @@
 35	1443	7383703634933408	src/CMakeFiles/cgraytracer.dir/geometry/mesh/bezier_patch_mesh.cpp.obj	44e2e30116aa736
 1444	2377	7383703644301926	src/libcgraytracer.a	9c226f6c86c4712
 2377	3128	7383703651766992	test/task2_test.exe	19227564ea4c555c
+91	1707	7395813208224922	src/CMakeFiles/cgraytracer.dir/geometry/primitives/sphere.cpp.obj	d86f1d7437653a5f
+148	1708	7395813208224922	src/CMakeFiles/cgraytracer.dir/geometry/primitives/triangle.cpp.obj	bf8d714ef8a8902
+1708	3382	7395813224965390	src/libcgraytracer.a	9c226f6c86c4712
+3382	4711	7395813238138961	test/task2_test.exe	19227564ea4c555c
