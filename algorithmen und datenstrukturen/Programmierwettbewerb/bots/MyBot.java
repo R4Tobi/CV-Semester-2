@@ -37,7 +37,7 @@ public class MyBot extends Bot {
      */
     @Override
     public String getName() {
-        return "Mäidscha Monogwäm";
+        return "Mäidscha Monogwäm der Geile Oida";
     }
 
     /**
@@ -81,28 +81,30 @@ public class MyBot extends Bot {
     public void executeTurn(StaticGameState state, Controller controller) {
         System.out.println("Der Bot \"" + getName() + "\" ist am Zug in Runde " + state.getTurn() + "!");
 
-        // Wenn die Runde 10 erreicht ist und der "last"-Schalter noch nicht aktiviert
-        // wurde
+        // Spielfeldgröße erhalten
+        int width = state.getBoardSizeX();
+        int height = state.getBoardSizeY();
+
+        // Wenn die Runde 10 erreicht ist und der "last"-Schalter noch nicht aktiviert wurde
         if (state.getTurn() >= 10 && !this.last) {
             // Hole die Position der Käsetile
             PathTile cheese = state.getMyPlayerState().getCheeseTile();
             IntVector2 pos = cheese.getPosition();
             // Versuche, Türme um den Käsetile herum zu platzieren
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-                    controller.placeTower(pos.x + i, pos.y + j, Tower.TowerType.CATANA_CAT);
-                    // Überprüfe, ob ein Turm platziert wurde
-                    if (state.getMyPlayerState().getBoard()[pos.x + i][pos.y + j] instanceof TowerTile) {
-                        this.last = true;
-                        break;
+            for (int i = -1; i < 1; i++) {
+                for (int j = -1; j < 1; j++) {
+                    // platziere den Tutm, wenn die Fläche bebaubar ist.
+                    if (isValidPosition(pos.x + i, pos.y + j, width, height)) {
+                        controller.placeTower(pos.x + i, pos.y + j, Tower.TowerType.CATANA_CAT);
+                        // Überprüfe, ob ein Turm platziert wurde
+                        if (state.getMyPlayerState().getBoard()[pos.x + i][pos.y + j] instanceof TowerTile) {
+                            this.last = true;
+                            break;
+                        }
                     }
                 }
             }
         }
-
-        // Spielfeldgröße erhalten
-        int width = state.getBoardSizeX();
-        int height = state.getBoardSizeY();
 
         // Spielfeld erhalten
         Tile[][] map = state.getMyPlayerState().getBoard();
